@@ -35,3 +35,27 @@
         border-radius: 8px;
     }
 }
+
+.footer {
+    @include flex-direction(column);
+    background-color: $color-primary;
+    margin-top: 1rem;
+    color: $color-bg-alt;
+    padding: 2.25rem 1.25rem;
+
+    &__logo {
+        font-family: $font-heading;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__address {
+        font-family: $font-text;
+        margin-bottom: 0.5rem;
+    }
+
+    &__phone {
+        font-family: $font-text;
+        color: $color-bg-alt;
+    }
+}

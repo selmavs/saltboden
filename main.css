@@ -31,4 +31,26 @@
   gap: 0.5rem;
   border: 2.5px solid #FFFFFF;
   border-radius: 8px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #3B4448;
+  margin-top: 1rem;
+  color: #FFFFFF;
+  padding: 2.25rem 1.25rem;
+}
+.footer__logo {
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.footer__address {
+  font-family: "Work Sans", sans-serif;
+  margin-bottom: 0.5rem;
+}
+.footer__phone {
+  font-family: "Work Sans", sans-serif;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
