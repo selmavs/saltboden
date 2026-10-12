@@ -1,0 +1,10 @@
+@mixin flex-direction($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin mq($bp) {
+    @media (min-width: $bp) {
+        @content;
+    }
+}
