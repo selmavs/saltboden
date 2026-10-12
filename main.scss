@@ -79,7 +79,6 @@
 .footer {
     @include flex-direction(column);
     background-color: $color-primary;
-    margin-top: 1rem;
     color: $color-bg;
     padding: 2.25rem 1.25rem;
 
