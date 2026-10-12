@@ -20,7 +20,7 @@
 
     &__logo {
         font-family: $font-heading;
-        color: $color-bg-alt;
+        color: $color-bg;
         font-size: 2rem;
         font-weight: 500;
     }
@@ -30,12 +30,12 @@
         padding: 1rem 1rem;
         align-items: center;
         background-color: $color-primary;
-        color: $color-bg-alt;
+        color: $color-bg;
         font-family: $font-text;
         font-size: 1.25rem;
         font-weight: 500;
         gap: 0.5rem;
-        border: 2.5px solid $color-bg-alt;
+        border: 2.5px solid $color-bg;
         border-radius: 8px;
 
         @include mq($bp-desktop) {
@@ -45,6 +45,12 @@
 }
 
 .nav {
+    display: none;
+
+    @include mq($bp-desktop) {
+        display: block;
+    }
+
     &__links {
         @include flex-direction;
         list-style: none;
@@ -74,7 +80,7 @@
     @include flex-direction(column);
     background-color: $color-primary;
     margin-top: 1rem;
-    color: $color-bg-alt;
+    color: $color-bg;
     padding: 2.25rem 1.25rem;
 
     &__logo {
@@ -90,6 +96,6 @@
 
     &__phone {
         font-family: $font-text;
-        color: $color-bg-alt;
+        color: $color-bg;
     }
 }
