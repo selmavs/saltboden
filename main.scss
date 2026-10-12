@@ -83,6 +83,12 @@
     color: $color-bg;
     padding: 2.25rem 1.25rem;
 
+    @include mq($bp-desktop) {
+        @include flex-direction;
+        justify-content: space-between;
+        padding: 2.75rem 2.5rem;
+    }
+
     &__logo {
         font-family: $font-heading;
         font-size: 1.5rem;
@@ -97,5 +103,32 @@
     &__phone {
         font-family: $font-text;
         color: $color-bg;
+    }
+
+    &__social, &__mail {
+        display: none;
+
+        @include mq($bp-desktop) {
+            display: inline-block;
+            color: $color-bg;
+            font-family: $font-text;
+        }
+    }
+
+    &__social {
+        margin-left: 0.75rem;
+    }
+
+    &__info {
+        @include flex-direction;
+        gap: 0.5rem;
+    }
+
+    &__dot {
+        display: none;
+
+        @include mq($bp-desktop) {
+            display: block;
+        }
     }
 }

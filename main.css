@@ -81,6 +81,14 @@
   color: #F6F1E9;
   padding: 2.25rem 1.25rem;
 }
+@media (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2.75rem 2.5rem;
+  }
+}
 .footer__logo {
   font-family: "Fraunces", serif;
   font-size: 1.5rem;
@@ -93,4 +101,30 @@
 .footer__phone {
   font-family: "Work Sans", sans-serif;
   color: #F6F1E9;
+}
+.footer__social, .footer__mail {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .footer__social, .footer__mail {
+    display: inline-block;
+    color: #F6F1E9;
+    font-family: "Work Sans", sans-serif;
+  }
+}
+.footer__social {
+  margin-left: 0.75rem;
+}
+.footer__info {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.footer__dot {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .footer__dot {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */
