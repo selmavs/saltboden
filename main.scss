@@ -1,1 +1,37 @@
-/* Styling */
+@use "variables.scss" as *;
+@use "mixins.scss" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    @include flex-direction;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    background-color: $color-primary;
+
+    &__logo {
+        font-family: $font-heading;
+        color: $color-bg-alt;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    &__button {
+        @include flex-direction;
+        padding: 1rem 1rem;
+        align-items: center;
+        background-color: $color-primary;
+        color: $color-bg-alt;
+        font-family: $font-text;
+        font-size: 1.25rem;
+        font-weight: 500;
+        gap: 0.5rem;
+        border: 2.5px solid $color-bg-alt;
+        border-radius: 8px;
+    }
+}
