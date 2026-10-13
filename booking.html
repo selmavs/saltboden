@@ -38,6 +38,89 @@
             <section>
                 <h1 class="booking__title">Boka bord</h1>
                 <p class="booking__intro">Fält markerade med * är obligatoriska. Du får en bekräftelse via e-post.</p>
+
+                <form class="booking__form" action="#" method="post">
+                    <fieldset class="booking__fieldset">
+                        <legend>Ditt besök</legend>
+
+                        <div class="booking__visit">
+                            <div class="booking__field">
+                                <label for="datum">Datum *</label>
+                                <input type="date" id="datum" name="datum" min="2026-10-13" required>
+                            </div>
+                            
+                            <div class="booking__field">
+                                <label for="tid">Tid *</label>
+                                <select name="tid" id="tid" required>
+                                    <option value="">Välj tid</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                </select>
+                            </div>
+
+                            <div class="booking__field">
+                                <label for="antal">Antal gäster *</label>
+                                <input type="number" name="antal" id="antal" min="1" max="10" value="1" inputmode="numeric" required>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="booking__fieldset">
+                        <legend>Var vill ni sitta?</legend>
+                        
+                        <div class="booking__seat">
+                            <div class="booking__choice">
+                                <input type="radio" id="plats-inne" name="plats" value="inne" checked>
+                                <label for="plats-inne">Inne</label>
+                            </div>
+                            <div class="booking__choice">
+                                <input type="radio" id="plats-ute" name="plats" value="ute">
+                                <label for="plats-ute">Uteservering</label>
+                            </div>
+                            <div class="booking__choice">
+                                <input type="radio" id="plats-bar" name="plats" value="bar">
+                                <label for="plats-bar">Vid baren</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="booking__fieldset">
+                        <legend>Dina uppgifter</legend>
+
+                        <div class="booking__contact">
+                            <div class="booking__field">
+                                <label for="namn">Namn *</label>
+                                <input type="text" id="namn" name="namn" autocomplete="name" required>
+                            </div>
+                            <div class="booking__field">
+                                <label for="telefon">Telefon *</label>
+                                <input type="tel" id="telefon" name="telefon" autocomplete="tel" required>
+                            </div>
+                        </div>
+
+                        <div class="booking__field">
+                            <label for="epost">E-post *</label>
+                            <input type="email" id="epost" name="epost" autocomplete="email" aria-describedby="epost-hint" required>
+                            <p class="booking__hint" id="epost-hint">Vi skickar bokningsbekräftelsen hit.</p>
+                        </div>
+                    </fieldset>
+
+                    <div class="booking__field">
+                        <label for="allergier">Allergier eller önskemål</label>
+                        <textarea name="allergier" id="allergier" rows="5" maxlength="500"></textarea>
+                    </div>
+
+                    <div class="booking__terms">
+                        <input type="checkbox" id="villkor" name="villkor" required>
+                        <label for="villkor">Jag godkänner att Saltboden sparar mina uppgifter för bokningen *</label>
+                    </div>
+
+                    <button class="booking__submit" type="submit">Skicka bokning</button>
+                </form>
             </section>
 
             <aside class="booking__aside">

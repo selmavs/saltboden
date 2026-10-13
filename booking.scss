@@ -21,6 +21,10 @@ body {
         color: $color-text-alt;
     }
 
+    &__fieldset {
+        border: none;
+    }
+
     &__aside {
         @include flex-direction(column);
         background: $color-text;

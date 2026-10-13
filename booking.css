@@ -16,6 +16,9 @@ body {
 .booking__intro {
   color: #6B7478;
 }
+.booking__fieldset {
+  border: none;
+}
 .booking__aside {
   display: flex;
   flex-direction: column;
