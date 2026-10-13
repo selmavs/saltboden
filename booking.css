@@ -1,4 +1,18 @@
-h1 {
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.booking {
+  padding: 2rem 1rem;
+  line-height: 1.5;
+  background: #F6F1E9;
+  color: #1E2A2F;
+}
+.booking__title {
   font-family: "Fraunces", serif;
   font-weight: 600;
+  font-size: 2.5rem;
+}
+.booking__intro {
+  color: #6B7478;
 }/*# sourceMappingURL=booking.css.map */

@@ -1,7 +1,23 @@
 @use "variables.scss" as *;
 @use "mixins.scss" as *;
 
-h1 {
-    font-family: $font-heading;
-    font-weight: 600;
+body {
+    font-family: $font-text;
+}
+
+.booking {
+    padding: 2rem 1rem;
+    line-height: 1.5;
+    background: $color-bg;
+    color: $color-text;
+
+    &__title {
+        font-family: $font-heading;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+
+    &__intro {
+        color: $color-text-alt;
+    }
 }
