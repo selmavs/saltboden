@@ -38,4 +38,8 @@ body {
 .booking__aside-phone {
   color: #F6F1E9;
   font-weight: 550;
+}
+
+address {
+  font-style: normal;
 }/*# sourceMappingURL=booking.css.map */
