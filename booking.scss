@@ -1,0 +1,7 @@
+@use "variables.scss" as *;
+@use "mixins.scss" as *;
+
+h1 {
+    font-family: $font-heading;
+    font-weight: 600;
+}
