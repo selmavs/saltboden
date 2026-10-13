@@ -15,11 +15,13 @@ body {
 }
 .booking__intro {
   color: #1E2A2F;
+  margin: 0.25rem 0 1.5rem;
 }
 .booking__form {
   background: #FFFFFF;
   padding: 1.5rem;
   border-radius: 12px;
+  margin-bottom: 2rem;
 }
 .booking__legend {
   font-family: "Fraunces", serif;
