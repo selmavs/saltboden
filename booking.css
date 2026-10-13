@@ -8,6 +8,10 @@ body {
   background: #F6F1E9;
   color: #1E2A2F;
 }
+.booking :focus-visible {
+  outline: 3px solid #1E2A2F;
+  outline-offset: 3px;
+}
 .booking__title {
   font-family: "Fraunces", serif;
   font-weight: 600;
@@ -161,7 +165,17 @@ body {
   color: #F6F1E9;
   font-weight: 600;
 }
+.booking__aside-phone:focus-visible {
+  outline-color: #FFFFFF;
+}
 
 address {
   font-style: normal;
+}
+
+.nav__link:focus-visible,
+.footer__info a:focus-visible,
+.footer__social:focus-visible {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 3px;
 }/*# sourceMappingURL=booking.css.map */
