@@ -59,10 +59,26 @@ body {
   flex-direction: column;
   gap: 1rem;
 }
+@media (min-width: 768px) {
+  .booking__visit {
+    display: flex;
+    flex-direction: row;
+  }
+  .booking__visit .booking__field {
+    flex: 1;
+  }
+}
 .booking__seat {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+@media (min-width: 768px) {
+  .booking__seat {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
 }
 .booking__seating {
   margin-bottom: 0.5rem;
@@ -77,6 +93,15 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+@media (min-width: 768px) {
+  .booking__contact {
+    display: flex;
+    flex-direction: row;
+  }
+  .booking__contact .booking__field {
+    flex: 1;
+  }
 }
 .booking__email {
   margin-top: 1rem;

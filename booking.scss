@@ -66,11 +66,24 @@ body {
     &__visit {
         @include flex-direction(column);
         gap: 1rem;
+
+        @include mq($bp-tablet) {
+            @include flex-direction;
+
+            .booking__field {
+                flex: 1;
+            }
+        }
     }
 
     &__seat {
         @include flex-direction(column);
         gap: 1rem;
+
+        @include mq($bp-tablet) {
+            @include flex-direction;
+            gap: 2rem;
+        }
     }
 
     &__seating {
@@ -86,6 +99,14 @@ body {
     &__contact {
         @include flex-direction(column);
         gap: 1rem;
+
+        @include mq($bp-tablet) {
+            @include flex-direction;
+
+            .booking__field {
+                flex: 1;
+            }
+        }
     }
 
     &__email {
