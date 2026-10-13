@@ -41,7 +41,7 @@
 
                 <form class="booking__form" action="#" method="post">
                     <fieldset class="booking__fieldset">
-                        <legend>Ditt besök</legend>
+                        <legend class="booking__legend">Ditt besök</legend>
 
                         <div class="booking__visit">
                             <div class="booking__field">
@@ -70,8 +70,8 @@
                     </fieldset>
 
                     <fieldset class="booking__fieldset">
-                        <legend>Var vill ni sitta?</legend>
-                        
+                        <legend class="booking__seating">Var vill ni sitta?</legend>
+
                         <div class="booking__seat">
                             <div class="booking__choice">
                                 <input type="radio" id="plats-inne" name="plats" value="inne" checked>
@@ -89,7 +89,7 @@
                     </fieldset>
 
                     <fieldset class="booking__fieldset">
-                        <legend>Dina uppgifter</legend>
+                        <legend class="booking__legend">Dina uppgifter</legend>
 
                         <div class="booking__contact">
                             <div class="booking__field">
@@ -102,7 +102,7 @@
                             </div>
                         </div>
 
-                        <div class="booking__field">
+                        <div class="booking__field booking__email">
                             <label for="epost">E-post *</label>
                             <input type="email" id="epost" name="epost" autocomplete="email" aria-describedby="epost-hint" required>
                             <p class="booking__hint" id="epost-hint">Vi skickar bokningsbekräftelsen hit.</p>

@@ -18,11 +18,114 @@ body {
     }
 
     &__intro {
-        color: $color-text-alt;
+        color: $color-text;
+    }
+
+    &__form {
+        background: $color-bg-alt;
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+
+    &__legend {
+        font-family: $font-heading;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+    }
+
+    &__field {
+        @include flex-direction(column);
     }
 
     &__fieldset {
         border: none;
+        margin-bottom: 1.75rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    select, 
+    textarea {
+        display: block;
+        width: 100%;
+        min-height: 2.75rem;
+        margin-top: 0.25rem;
+        padding: 0.5rem 0.75rem;
+        font: inherit;
+        color: $color-text;
+        border: 1.75px solid $color-text;
+        border-radius: 6px;
+    }
+
+    &__visit {
+        @include flex-direction(column);
+        gap: 1rem;
+    }
+
+    &__seat {
+        @include flex-direction(column);
+        gap: 1rem;
+    }
+
+    &__seating {
+        margin-bottom: 0.5rem;
+    }
+
+    &__choice {
+        @include flex-direction;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    &__contact {
+        @include flex-direction(column);
+        gap: 1rem;
+    }
+
+    &__email {
+        margin-top: 1rem;
+    }
+
+    &__hint {
+        margin-top: 0.25rem;
+        font-size: 0.9rem;
+    }
+
+    &__field label, &__seating {
+        font-weight: 600;
+    }
+
+    &__terms {
+        @include flex-direction;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 1.75rem 0;
+    }
+
+    & input[type="radio"], 
+    & input[type="checkbox"] {
+        width: 1.5rem;
+        height: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    & textarea {
+        resize: vertical;
+    }
+
+    &__submit {
+        min-height: 3rem;
+        padding: 0.75rem 1.75rem;
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: $color-bg;
+        background: $color-accent;
+        border-radius: 6px;
+        border: 2px solid $color-accent;
     }
 
     &__aside {
@@ -47,7 +150,7 @@ body {
 
     &__aside-phone {
         color: $color-bg;
-        font-weight: 550;
+        font-weight: 600;
     }
 }
 

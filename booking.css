@@ -14,10 +14,102 @@ body {
   font-size: 2.5rem;
 }
 .booking__intro {
-  color: #6B7478;
+  color: #1E2A2F;
+}
+.booking__form {
+  background: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+.booking__legend {
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.booking__field {
+  display: flex;
+  flex-direction: column;
 }
 .booking__fieldset {
   border: none;
+  margin-bottom: 1.75rem;
+}
+.booking input[type=text],
+.booking input[type=email],
+.booking input[type=tel],
+.booking input[type=number],
+.booking input[type=date],
+.booking select,
+.booking textarea {
+  display: block;
+  width: 100%;
+  min-height: 2.75rem;
+  margin-top: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  font: inherit;
+  color: #1E2A2F;
+  border: 1.75px solid #1E2A2F;
+  border-radius: 6px;
+}
+.booking__visit {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.booking__seat {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.booking__seating {
+  margin-bottom: 0.5rem;
+}
+.booking__choice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+.booking__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.booking__email {
+  margin-top: 1rem;
+}
+.booking__hint {
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+}
+.booking__field label, .booking__seating {
+  font-weight: 600;
+}
+.booking__terms {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.75rem 0;
+}
+.booking input[type=radio], .booking input[type=checkbox] {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
+.booking textarea {
+  resize: vertical;
+}
+.booking__submit {
+  min-height: 3rem;
+  padding: 0.75rem 1.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #F6F1E9;
+  background: #8A3418;
+  border-radius: 6px;
+  border: 2px solid #8A3418;
 }
 .booking__aside {
   display: flex;
@@ -40,7 +132,7 @@ body {
 }
 .booking__aside-phone {
   color: #F6F1E9;
-  font-weight: 550;
+  font-weight: 600;
 }
 
 address {
