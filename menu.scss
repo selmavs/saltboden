@@ -1,2 +1,162 @@
 @use "variables.scss" as *;
 @use "mixins.scss" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    @include flex-direction;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    background-color: $color-primary;
+
+    @include mq($bp-desktop) {
+        padding: 1.25rem 2.5rem;
+    }
+
+    &__logo {
+        font-family: $font-heading;
+        color: $color-bg;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    &__button {
+        @include flex-direction;
+        padding: 1rem 1rem;
+        align-items: center;
+        background-color: $color-primary;
+        color: $color-bg;
+        font-family: $font-text;
+        font-size: 1.25rem;
+        font-weight: 500;
+        gap: 0.5rem;
+        border: 2.5px solid $color-bg;
+        border-radius: 8px;
+
+        @include mq($bp-desktop) {
+            display: none;
+        }
+    }
+}
+
+.nav {
+    display: none;
+
+    @include mq($bp-desktop) {
+        display: block;
+    }
+
+    &__links {
+        @include flex-direction;
+        list-style: none;
+        gap: 2rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-bg;
+        font-family: $font-text;
+
+        &:hover {
+            font-weight: 600;
+        }
+
+        &--booking {
+            background-color: $color-accent;
+            padding: 0.75rem 1.25rem;
+            border-radius: 6px;
+            font-weight: 500;
+            margin-left: -1rem;
+        }
+    }
+}
+
+.menu {
+    @include flex-direction(column);
+    background-color: $color-bg;
+    
+    
+
+    @include mq($bp-desktop) {
+        @include flex-direction(column);
+
+    }
+
+    &__title {
+        font-family: $font-heading;
+        background-color: $color-bg;
+        justify-content: center;
+        align-items: center;
+        padding:3rem;
+        
+    }
+
+    &__buttons {
+        @include flex-direction;
+        font-family: $font-text;
+        border: 2px solid $color-primary;
+        gap: 1rem;
+
+    }
+}
+
+.footer {
+    @include flex-direction(column);
+    background-color: $color-primary;
+    color: $color-bg;
+    padding: 2.25rem 1.25rem;
+
+    @include mq($bp-desktop) {
+        @include flex-direction;
+        justify-content: space-between;
+        padding: 2.75rem 2.5rem;
+    }
+
+    &__logo {
+        font-family: $font-heading;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    &__address {
+        font-family: $font-text;
+        margin-bottom: 0.5rem;
+    }
+
+    &__phone {
+        font-family: $font-text;
+        color: $color-bg;
+    }
+
+    &__social, &__mail {
+        display: none;
+
+        @include mq($bp-desktop) {
+            display: inline-block;
+            color: $color-bg;
+            font-family: $font-text;
+        }
+    }
+
+    &__social {
+        margin-left: 0.75rem;
+    }
+
+    &__info {
+        @include flex-direction;
+        gap: 0.5rem;
+    }
+
+    &__dot {
+        display: none;
+
+        @include mq($bp-desktop) {
+            display: block;
+        }
+    }
+}
