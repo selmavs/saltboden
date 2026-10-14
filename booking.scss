@@ -1,15 +1,15 @@
 @use "variables.scss" as *;
 @use "mixins.scss" as *;
 
-body {
-    font-family: $font-text;
-    background: $color-bg;
-}
-
 .nav__link[aria-current="page"] {
     background: $color-bg;
     color: $color-primary;
     font-weight: 600;
+}
+
+.booking-wrapper {
+    font-family: $font-text;
+    background: $color-bg;
 }
 
 .booking {
