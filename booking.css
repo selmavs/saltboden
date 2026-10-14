@@ -93,6 +93,12 @@
   border: 1.75px solid #1E2A2F;
   border-radius: 6px;
 }
+.booking input:user-invalid,
+.booking select:user-invalid,
+.booking textarea:user-invalid {
+  border-color: #b3261e;
+  border-width: 3px;
+}
 .booking__visit {
   display: flex;
   flex-direction: column;

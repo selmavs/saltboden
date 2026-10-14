@@ -99,6 +99,13 @@
         border-radius: 6px;
     }
 
+    input:user-invalid,
+    select:user-invalid,
+    textarea:user-invalid {
+        border-color: #b3261e;
+        border-width: 3px;
+    }
+
     &__visit {
         @include flex-direction(column);
         gap: 1rem;
