@@ -232,6 +232,8 @@ body {
     }
 
     &__aside-phone {
+        display: inline-block;
+        padding: 0.25rem 0;
         color: $color-bg;
         font-weight: 600;
 

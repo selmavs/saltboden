@@ -223,6 +223,8 @@ body {
   }
 }
 .booking__aside-phone {
+  display: inline-block;
+  padding: 0.25rem 0;
   color: #F6F1E9;
   font-weight: 600;
 }
