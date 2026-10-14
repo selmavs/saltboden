@@ -1,4 +1,4 @@
-.nav__link[aria-current=page] {
+.nav__link--booking[aria-current=page] {
   background: #F6F1E9;
   color: #3B4448;
   font-weight: 600;
