@@ -249,14 +249,3 @@
         }
     }
 }
-
-address {
-    font-style: normal;
-}
-
-.nav__link:focus-visible, 
-.footer__info a:focus-visible, 
-.footer__social:focus-visible {
-    outline: 3px solid $color-bg-alt;
-    outline-offset: 3px;
-}
