@@ -29,7 +29,7 @@ body {
 
     &__section {
         @include mq($bp-desktop) {
-            flex: 2;
+            flex: 2.15;
         }
     }
 
@@ -186,8 +186,10 @@ body {
         border-radius: 12px;
 
         @include mq($bp-desktop) {
-            flex: 1;
+            flex: 0.85;
             height: fit-content;
+            gap: 0.75rem;
+            padding: 1.75rem 2rem;
         }
     }
 
@@ -200,6 +202,10 @@ body {
         @include flex-direction(column);
         gap: 0.5rem;
         padding-left: 1rem;
+
+        @include mq($bp-desktop) {
+            gap: 0.75rem;
+        }
     }
 
     &__aside-phone {
