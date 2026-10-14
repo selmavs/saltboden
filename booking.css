@@ -12,6 +12,11 @@ body {
   outline: 3px solid #1E2A2F;
   outline-offset: 3px;
 }
+@media (min-width: 768px) {
+  .booking {
+    padding: 2rem 1.25rem;
+  }
+}
 .booking__title {
   font-family: "Fraunces", serif;
   font-weight: 600;

@@ -16,6 +16,10 @@ body {
         outline-offset: 3px;
     }
 
+    @include mq($bp-tablet) {
+        padding: 2rem 1.25rem;
+    }
+
     &__title {
         font-family: $font-heading;
         font-weight: 600;
