@@ -72,7 +72,7 @@
 .hero__section p {
   font-family: "Work Sans", sans-serif;
   color: #3B4448;
-  font-size: 18px;
+  font-size: 20px;
 }
 @media (min-width: 1024px) {
   .hero__section .mobile--text {
