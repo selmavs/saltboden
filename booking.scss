@@ -7,16 +7,12 @@
     font-weight: 600;
 }
 
-.booking-wrapper {
-    font-family: $font-text;
-    background: $color-bg;
-}
-
 .booking {
     padding: 2rem 1rem;
     line-height: 1.5;
     background: $color-bg;
     color: $color-text;
+    font-family: $font-text;
 
     :focus-visible {
         outline: 3px solid $color-text;

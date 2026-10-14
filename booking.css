@@ -4,16 +4,12 @@
   font-weight: 600;
 }
 
-.booking-wrapper {
-  font-family: "Work Sans", sans-serif;
-  background: #F6F1E9;
-}
-
 .booking {
   padding: 2rem 1rem;
   line-height: 1.5;
   background: #F6F1E9;
   color: #1E2A2F;
+  font-family: "Work Sans", sans-serif;
 }
 .booking :focus-visible {
   outline: 3px solid #1E2A2F;
