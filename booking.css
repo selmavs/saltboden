@@ -187,12 +187,12 @@
   cursor: pointer;
   transition: background 0.2s ease;
 }
-.booking__submit:hover {
-  background: rgb(116.2777777778, 43.8148148148, 20.2222222222);
-}
 @media (min-width: 1024px) {
   .booking__submit {
     padding: 0.85rem 2rem;
+  }
+  .booking__submit:hover {
+    background-color: rgb(116.2777777778, 43.8148148148, 20.2222222222);
   }
 }
 .booking__aside {
