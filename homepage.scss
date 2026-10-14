@@ -26,7 +26,7 @@
 
     @include mq($bp-desktop) {
         @include flex-direction(row-reverse);
-        align-items: stretch;
+        align-items: center;
         gap: 3rem;
         padding: 3.5rem 3rem;
         }
@@ -48,6 +48,7 @@
 
         @include mq($bp-desktop) {
             padding: 0;
+            gap: 2.5rem;
         }
 
         h1 {
