@@ -21,10 +21,10 @@ main :focus-visible {
   flex-direction: column;
   gap: 1rem;
 }
-.contact address {
+.contact__address {
   font-style: normal;
 }
-.contact__heading {
+.contact__title {
   font-family: "Fraunces", serif;
   margin-bottom: 0.15rem;
   font-size: 1.3rem;
@@ -101,12 +101,4 @@ main :focus-visible {
   border: 2px solid #8A3418;
   cursor: pointer;
   transition: background 0.2s ease;
-}
-@media (min-width: 1024px) {
-  .form__submit {
-    padding: 0.85rem 2rem;
-  }
-  .form__submit:hover {
-    background-color: rgb(116.2777777778, 43.8148148148, 20.2222222222);
-  }
 }/*# sourceMappingURL=contact.css.map */

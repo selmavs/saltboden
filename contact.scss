@@ -3,8 +3,8 @@
 @use "sass:color";
 
 main :focus-visible {
-        outline: 3px solid $color-text;
-        outline-offset: 3px;
+    outline: 3px solid $color-text;
+    outline-offset: 3px;
 }
 
 .container {
@@ -27,11 +27,11 @@ main :focus-visible {
         gap: 1rem;
     }
 
-    address {
+    &__address {
         font-style: normal;
     }
 
-    &__heading {
+    &__title {
         font-family: $font-heading;
         margin-bottom: 0.15rem;
         font-size: 1.3rem;
@@ -118,13 +118,5 @@ main :focus-visible {
         border: 2px solid $color-accent;
         cursor: pointer;
         transition: background 0.2s ease;
-
-        @include mq($bp-desktop) {
-            padding: 0.85rem 2rem;
-
-            &:hover {
-                background-color: color.adjust($color-accent, $lightness: -5%);
-            }
-        }
     }
 }
