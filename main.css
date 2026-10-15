@@ -76,6 +76,10 @@
   font-weight: 500;
   margin-left: -1rem;
 }
+.nav__link:focus-visible {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 3px;
+}
 
 .footer {
   display: flex;
@@ -118,10 +122,18 @@
 .footer__social {
   margin-left: 0.75rem;
 }
+.footer__social:focus-visible {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 3px;
+}
 .footer__info {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
+}
+.footer__info a:focus-visible {
+  outline: 3px solid #FFFFFF;
+  outline-offset: 3px;
 }
 .footer__dot {
   display: none;
@@ -130,4 +142,7 @@
   .footer__dot {
     display: block;
   }
+}
+.footer address {
+  font-style: normal;
 }/*# sourceMappingURL=main.css.map */

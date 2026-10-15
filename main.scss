@@ -77,6 +77,11 @@
             font-weight: 500;
             margin-left: -1rem;
         }
+
+        &:focus-visible {
+            outline: 3px solid $color-bg-alt;
+            outline-offset: 3px;
+        }
     }
 }
 
@@ -120,11 +125,21 @@
 
     &__social {
         margin-left: 0.75rem;
+
+        &:focus-visible {
+            outline: 3px solid $color-bg-alt;
+            outline-offset: 3px;
+        }
     }
 
     &__info {
         @include flex-direction;
         gap: 0.5rem;
+
+        & a:focus-visible {
+            outline: 3px solid $color-bg-alt;
+            outline-offset: 3px;
+        }
     }
 
     &__dot {
@@ -133,5 +148,9 @@
         @include mq($bp-desktop) {
             display: block;
         }
+    }
+
+    address {
+        font-style: normal;
     }
 }
