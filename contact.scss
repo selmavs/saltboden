@@ -52,9 +52,27 @@ main :focus-visible {
 }
 
 .questions {
+    padding: 1rem 0;
+
     &__title {
         font-family: $font-heading;
         margin-top: 1rem;
+    }
+
+    &__details {
+        background: $color-bg-alt;
+        margin: 0.75rem 0;
+        border-radius: 6px;
+
+        summary {
+            font-weight: 600;
+            cursor: pointer;
+            padding: 1rem;
+        }
+
+        p {
+            padding: 0 1rem 1rem;
+        }
     }
 }
 

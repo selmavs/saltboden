@@ -41,9 +41,25 @@ main :focus-visible {
   color: #8A3418;
 }
 
+.questions {
+  padding: 1rem 0;
+}
 .questions__title {
   font-family: "Fraunces", serif;
   margin-top: 1rem;
+}
+.questions__details {
+  background: #FFFFFF;
+  margin: 0.75rem 0;
+  border-radius: 6px;
+}
+.questions__details summary {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1rem;
+}
+.questions__details p {
+  padding: 0 1rem 1rem;
 }
 
 .form {
