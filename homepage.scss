@@ -7,16 +7,6 @@
     box-sizing: border-box;
 }
 
-.nav__link1 {
-@include mq($bp-desktop) {
-    text-decoration: underline;
-    text-underline-offset: 0.3em;
-    color: #F6F1E9;
-    font-family: "Work Sans", sans-serif;
-    font-weight: 600;
-    }
-}
-
 /* Hero */
 
 .hero {
@@ -86,7 +76,7 @@
 
             @include mq($bp-desktop) {
                 display: block;
-                color: $color-text-alt;
+                color: $color-primary;
             }
         }
     }

@@ -5,16 +5,15 @@
   box-sizing: border-box;
 }
 
-@media (min-width: 1024px) {
-  .nav__link1 {
+/*.nav__link1 {
+@include mq($bp-desktop) {
     text-decoration: underline;
     text-underline-offset: 0.3em;
     color: #F6F1E9;
     font-family: "Work Sans", sans-serif;
     font-weight: 600;
-  }
-}
-
+    }
+}*/
 /* Hero */
 .hero {
   display: block;
@@ -85,7 +84,7 @@
 @media (min-width: 1024px) {
   .hero__section .desktop--text {
     display: block;
-    color: #6B7478;
+    color: #3B4448;
   }
 }
 .hero__links {
