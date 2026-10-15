@@ -54,16 +54,20 @@
     &__links {
         @include flex-direction;
         list-style: none;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     &__link {
         text-decoration: none;
         color: $color-bg;
         font-family: $font-text;
+        padding: 0.25rem 0.5rem;
 
-        &:hover {
+        &[aria-current="page"] {
             font-weight: 600;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+            text-decoration-thickness: 2px;
         }
 
         &--booking {
