@@ -16,6 +16,9 @@ main :focus-visible {
   font-size: 2.5rem;
 }
 
+.contact__image {
+  max-width: 100%;
+}
 .contact__info {
   display: flex;
   flex-direction: column;
