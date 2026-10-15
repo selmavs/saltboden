@@ -1,1 +1,32 @@
-/*# sourceMappingURL=contact.css.map */
+.container {
+  background: #F6F1E9;
+  font-family: "Work Sans", sans-serif;
+  padding: 2rem 1rem;
+  line-height: 1.5;
+  color: #1E2A2F;
+}
+.container h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact address {
+  font-style: normal;
+}
+.contact__heading {
+  font-family: "Fraunces", serif;
+  margin-bottom: 0.15rem;
+}
+.contact__details {
+  display: flex;
+  flex-direction: column;
+}
+.contact__details a {
+  color: #8A3418;
+}/*# sourceMappingURL=contact.css.map */

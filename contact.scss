@@ -1,2 +1,41 @@
 @use "variables.scss" as *;
 @use "mixins.scss" as *;
+
+.container {
+    background: $color-bg;
+    font-family: $font-text;
+    padding: 2rem 1rem;
+    line-height: 1.5;
+    color: $color-text;
+
+    & h1 {
+        font-family: $font-heading;
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+}
+
+.contact {
+    &__info {
+        @include flex-direction(column);
+        gap: 1rem;
+    }
+
+    & address {
+        font-style: normal;
+    }
+
+    &__heading {
+        font-family: $font-heading;
+        margin-bottom: 0.15rem;
+    }
+
+    &__details {
+        @include flex-direction(column);
+        
+        & a {
+            color: $color-accent;
+        }
+    }
+}
+
