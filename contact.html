@@ -35,7 +35,7 @@
 
     <main>
         <div class="container">
-            <h1>Kontakt</h1>
+            <h1 class="container__title">Kontakt</h1>
             <div class="content">
                 <section class="contact">
                     <img src="" alt="">
@@ -52,21 +52,48 @@
                         <div>
                             <h2 class="contact__heading">Telefon & e-post</h2>
                             <address class="contact__details">
-                                <a href="tel:0101234567">010-123 45 67</a>
-                                <a href="mailto:hej@saltboden.se">hej@saltboden.se</a>
+                                <a class="contact__link" href="tel:0101234567">010-123 45 67</a>
+                                <a class="contact__link" href="mailto:hej@saltboden.se">hej@saltboden.se</a>
                             </address>
                         </div>
                     </div>
                 </section>
 
                 <section class="questions">
-                    <h2>Vanliga frågor</h2>
+                    <h2 class="questions__title">Vanliga frågor</h2>
                 </section>
             </div>
 
-            <form action="#">
-                <fieldset>
-                    <legend>Skicka ett meddelande</legend>
+            <form class="form" action="#" method="post">
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Skicka ett meddelande</legend>
+
+                    <div class="form__field">
+                        <label for="namn">Namn</label>
+                        <input type="text" id="namn" name="namn" autocomplete="name">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="epost">E-post</label>
+                        <input type="email" id="epost" name="epost" autocomplete="email">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="amne">Ämne</label>
+                        <select name="amne" id="amne">
+                            <option value="">Välj ämne</option>
+                            <option value="fraga">Fråga</option>
+                            <option value="onskemal">Önskemål</option>
+                            <option value="sallskap">Större sällskap</option>
+                        </select>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="meddelande">Meddelande</label>
+                        <textarea name="meddelande" id="meddelande" rows="5" maxlength="500"></textarea>
+                    </div>
+
+                    <button class="form__submit" type="submit">Skicka</button>
                 </fieldset>
             </form>
         </div>
