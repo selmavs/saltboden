@@ -5,6 +5,6 @@
 
 @mixin mq($bp) {
     @media (min-width: $bp) {
-        @content;
+        @content; 
     }
 }

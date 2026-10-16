@@ -62,9 +62,6 @@
   color: #F6F1E9;
   font-family: "Work Sans", sans-serif;
 }
-.nav__link:hover {
-  font-weight: 600;
-}
 .nav__link--booking {
   background-color: #8A3418;
   padding: 0.75rem 1.25rem;
@@ -74,29 +71,68 @@
 }
 
 .menu {
-  display: flex;
-  flex-direction: column;
   background-color: #F6F1E9;
+  color: #1E2A2F;
+  font-family: "Work Sans", sans-serif;
+  padding: 3rem 1.25rem 4rem;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .menu {
-    display: flex;
-    flex-direction: column;
+    padding: 5rem 2rem 5rem;
   }
 }
-.menu__title {
-  font-family: "Fraunces", serif;
-  background-color: #F6F1E9;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem;
+
+.menu-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
 }
-.menu__buttons {
+.menu-intro__title {
+  font-family: "Fraunces", serif;
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .menu-intro__title {
+    font-size: 3.75rem;
+  }
+}
+.menu-intro_text {
+  color: #1E2A2F;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .menu-intro_text {
+    font-size: 1.125rem;
+  }
+}
+
+.menu-nav__list {
   display: flex;
   flex-direction: row;
-  font-family: "Work Sans", sans-serif;
-  border: 2px solid #3B4448;
-  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  list-style: none;
+}
+.menu-nav__link {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  border: 2px solid #1E2A2F;
+  border-radius: 999px;
+  color: #1E2A2F;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.menu-nav__link:hover, .menu-nav__link:focus-visible {
+  background-color: #1E2A2F;
+  color: #FFFFFF;
 }
 
 .footer {
