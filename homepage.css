@@ -101,6 +101,10 @@
   padding: 1rem;
   text-decoration: none;
 }
+.hero a:focus-visible {
+  outline: 3px solid #3B4448;
+  outline-offset: 3px;
+}
 @media (min-width: 1024px) {
   .hero a {
     padding: 1rem 1.5rem;
@@ -214,6 +218,10 @@
   color: #8A3418;
   font-weight: 600;
 }
+.main a:focus-visible {
+  outline: 3px solid #3B4448;
+  outline-offset: 3px;
+}
 @media (min-width: 1024px) {
   .main a {
     order: 2;
@@ -290,6 +298,10 @@
   color: #8A3418;
   margin-top: 1rem;
 }
+.aside__hitta a:focus-visible {
+  outline: 3px solid #3B4448;
+  outline-offset: 3px;
+}
 .aside__sällskap {
   display: none;
 }
@@ -315,4 +327,8 @@
 .aside__sällskap a {
   color: #F6F1E9;
   font-family: "Work Sans", sans-serif;
+}
+.aside__sällskap a:focus-visible {
+  outline: 3px solid #F6F1E9;
+  outline-offset: 3px;
 }/*# sourceMappingURL=homepage.css.map */

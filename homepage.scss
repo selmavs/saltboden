@@ -102,6 +102,11 @@
         padding: 1rem;
         text-decoration: none;
 
+        &:focus-visible {
+            outline: 3px solid $color-primary;
+            outline-offset: 3px;
+        }
+
             @include mq($bp-desktop) {
                 padding: 1rem 1.5rem;
             }
@@ -213,6 +218,11 @@
         color: $color-accent;
         font-weight: 600;
 
+        &:focus-visible {
+            outline: 3px solid $color-primary;
+            outline-offset: 3px;
+        }
+
         @include mq($bp-desktop) {
             order: 2;
             display: flex;
@@ -292,6 +302,11 @@
             font-family: $font-text;
             color: $color-accent;
             margin-top: 1rem;
+
+            &:focus-visible {
+            outline: 3px solid $color-primary;
+            outline-offset: 3px;
+        }
         }
     }
 
@@ -320,6 +335,11 @@
         a {
             color: $color-bg;
             font-family: $font-text;
+
+            &:focus-visible {
+            outline: 3px solid $color-bg;
+            outline-offset: 3px;
+        }
         }
     }
 }
