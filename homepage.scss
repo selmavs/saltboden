@@ -131,8 +131,11 @@
         padding: 2.5rem 1.5rem;
 
         @include mq($bp-desktop) {
-            @include flex-direction(row);
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            grid-template-areas: 
+                "heading link"
+                "cards cards";
             padding: 3.5rem 3rem;
             gap: 2rem;
             }
@@ -144,8 +147,7 @@
         font-size: 36px;
 
         @include mq($bp-desktop) {
-            order: 1;
-            flex: 1;
+            grid-area: heading;
         }
     }
 
@@ -177,9 +179,8 @@
     
         @include mq($bp-desktop) {
             @include flex-direction;
-            order: 3;
-            justify-content: center;
-            align-items: flex-start;
+            flex: 1;
+            grid-area: cards;
             gap: 1rem;
     }
 }
@@ -224,8 +225,7 @@
         }
 
         @include mq($bp-desktop) {
-            order: 2;
-            display: flex;
+            grid-area: link;
             align-items: center;
         }
     }
