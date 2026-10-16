@@ -26,6 +26,13 @@ main :focus-visible {
   flex-direction: column;
   gap: 1rem;
 }
+@media (min-width: 768px) {
+  .contact__info {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
 .contact__address {
   font-style: normal;
 }
