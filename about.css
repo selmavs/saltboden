@@ -11,24 +11,60 @@
 .about__image {
   width: 100%;
 }
+@media (min-width: 1024px) {
+  .about__image {
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 .about__section {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   padding: 2.5rem 1.5rem;
 }
+@media (min-width: 1024px) {
+  .about__section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5rem 3rem;
+  }
+}
 .about__section h1 {
   font-family: "Fraunces", serif;
   color: #3B4448;
   font-size: 42px;
+}
+@media (min-width: 1024px) {
+  .about__section h1 {
+    flex: 0 0 40%;
+    font-size: 54px;
+  }
 }
 .about__section p {
   font-family: "Work Sans", sans-serif;
   color: #3B4448;
   font-size: 18px;
 }
+@media (min-width: 1024px) {
+  .about__section p {
+    line-height: 1.5rem;
+  }
+}
 .about .desktop--text {
   display: none;
+}
+@media (min-width: 1024px) {
+  .about .desktop--text {
+    display: flex;
+  }
+}
+@media (min-width: 1024px) {
+  .about .mobile--text {
+    display: none;
+  }
 }
 
 .info {
@@ -39,6 +75,11 @@
   gap: 1.5rem;
   padding: 2.5rem 1.5rem;
 }
+@media (min-width: 1024px) {
+  .info {
+    padding: 4rem 3rem;
+  }
+}
 .info h2 {
   font-family: "Fraunces", serif;
   color: #3B4448;
@@ -48,6 +89,13 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .info__cards {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
 }
 .info__cards h3 {
   font-family: "Fraunces", serif;
@@ -64,6 +112,11 @@
   flex-direction: column;
   gap: 0.5rem;
 }
+@media (min-width: 1024px) {
+  .info__card1, .info__card2, .info__card3 {
+    gap: 1rem;
+  }
+}
 
 .staff {
   display: flex;
@@ -71,6 +124,11 @@
   background-color: #F6F1E9;
   gap: 1.5rem;
   padding: 2.5rem 1.5rem;
+}
+@media (min-width: 1024px) {
+  .staff {
+    padding: 5rem 3rem;
+  }
 }
 .staff h2 {
   font-family: "Fraunces", serif;
@@ -84,15 +142,39 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media (min-width: 1024px) {
+  .staff img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    aspect-ratio: 1;
+  }
+}
 .staff__cards {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
+@media (min-width: 1024px) {
+  .staff__cards {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.staff__cards > div {
+  flex: 1;
+  min-width: 0;
+}
 .staff__cards h3 {
   font-family: "Fraunces", serif;
   color: #3B4448;
   font-size: 22px;
+}
+@media (min-width: 1024px) {
+  .staff__cards h3 {
+    margin-top: 0.7rem;
+  }
 }
 .staff__cards p {
   font-family: "Work Sans", sans-serif;

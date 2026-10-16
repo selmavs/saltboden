@@ -13,6 +13,11 @@
 
     &__image {
         width: 100%;
+
+        @include mq($bp-desktop) {
+        height: 500px;
+        object-fit: cover;
+        }
     }
 
     &__section {
@@ -20,23 +25,47 @@
         gap: 1.5rem;
         padding: 2.5rem 1.5rem;
 
+        @include mq($bp-desktop) {
+            @include flex-direction;
+            align-items: center;
+            padding: 5rem 3rem;
+        }
+
         h1 {
             font-family: $font-heading;
             color: $color-primary;
             font-size: 42px;
+
+            @include mq($bp-desktop) {
+            flex: 0 0 40%;
+            font-size: 54px;
+            }
         }
 
         p {
             font-family: $font-text;
             color: $color-primary;
             font-size: 18px;
+
+            @include mq($bp-desktop) {
+            line-height: 1.5rem;
+            }
         }
     }
 
     .desktop--text {
         display: none;
+        @include mq($bp-desktop) {
+            display: flex;
+        }
     }
-}
+
+    .mobile--text {
+        @include mq($bp-desktop) {
+            display: none;
+        }
+    }
+    }
 
 .info {
     @include flex-direction(column);
@@ -44,6 +73,11 @@
     border-bottom: 1px solid $color-border;
     gap: 1.5rem;
     padding: 2.5rem 1.5rem;
+
+    @include mq($bp-desktop) {
+        padding: 4rem 3rem;
+        }
+
 
     h2 {
         font-family: $font-heading;
@@ -54,6 +88,12 @@
     &__cards {
         @include flex-direction(column);
         gap: 1.5rem;
+
+        @include mq($bp-desktop) {
+            @include flex-direction;
+            gap: 2rem;
+            }
+
         h3 {
             font-family: $font-heading;
             color: $color-primary;
@@ -70,6 +110,10 @@
     &__card1, &__card2, &__card3 {
     @include flex-direction(column);
     gap: 0.5rem;
+
+    @include mq($bp-desktop) {
+        gap: 1rem;
+    }
     }
 }
 
@@ -78,6 +122,10 @@
     background-color: $color-bg;
     gap: 1.5rem;
     padding: 2.5rem 1.5rem;
+
+    @include mq($bp-desktop) {
+        padding: 5rem 3rem;
+        }
 
     h2 {
         font-family: $font-heading;
@@ -90,16 +138,36 @@
         height: 250px;
         border-radius: 10px;
         object-fit: cover;
+
+        @include mq($bp-desktop) {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            aspect-ratio: 1;
+        }
     }
 
     &__cards {
         @include flex-direction (column);
         gap: 1.5rem;
 
+        @include mq($bp-desktop) {
+            @include flex-direction;
+        }
+
+        > div {
+            flex: 1;
+            min-width: 0;
+        }
+
         h3 {
         font-family: $font-heading;
         color: $color-primary;
         font-size: 22px;
+
+        @include mq($bp-desktop) {
+            margin-top: 0.7rem;
+        }
         }
 
         p {
