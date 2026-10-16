@@ -14,9 +14,11 @@ main :focus-visible {
   font-family: "Fraunces", serif;
   font-weight: 600;
   font-size: 2.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .contact__image {
+  display: none;
   max-width: 100%;
 }
 .contact__info {
@@ -30,7 +32,8 @@ main :focus-visible {
 .contact__title {
   font-family: "Fraunces", serif;
   margin-bottom: 0.15rem;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 .contact__details {
   display: flex;
@@ -47,6 +50,7 @@ main :focus-visible {
 .questions__title {
   font-family: "Fraunces", serif;
   margin-top: 1rem;
+  font-weight: 600;
 }
 .questions__details {
   background: #FFFFFF;
@@ -66,7 +70,6 @@ main :focus-visible {
   background: #FFFFFF;
   padding: 1.75rem 1.5rem;
   border-radius: 12px;
-  margin-bottom: 2rem;
 }
 .form__fieldset {
   border: none;
