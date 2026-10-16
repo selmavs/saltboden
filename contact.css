@@ -16,10 +16,36 @@ main :focus-visible {
   font-size: 2.5rem;
   margin-bottom: 0.75rem;
 }
+@media (min-width: 1024px) {
+  .container {
+    padding: 4rem 2.5rem;
+  }
+  .container__title {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  .content__layout {
+    flex: 1;
+  }
+}
 
 .contact__image {
   display: none;
-  max-width: 100%;
+}
+@media (min-width: 1024px) {
+  .contact__image {
+    display: block;
+    max-width: 100%;
+    border-radius: 12px;
+  }
 }
 .contact__info {
   display: flex;
@@ -33,14 +59,31 @@ main :focus-visible {
     gap: 5rem;
   }
 }
+@media (min-width: 1024px) {
+  .contact__info {
+    margin-top: 1.5rem;
+    gap: 8.5rem;
+  }
+}
 .contact__address {
   font-style: normal;
+}
+@media (min-width: 768px) {
+  .contact__address {
+    line-height: 1.6;
+  }
 }
 .contact__title {
   font-family: "Fraunces", serif;
   margin-bottom: 0.15rem;
   font-size: 1.25rem;
   font-weight: 600;
+}
+@media (min-width: 1024px) {
+  .contact__title {
+    font-size: 1.35rem;
+    margin-bottom: 0.25rem;
+  }
 }
 .contact__details {
   display: flex;
@@ -53,6 +96,11 @@ main :focus-visible {
 
 .questions {
   padding: 1rem 0;
+}
+@media (min-width: 1024px) {
+  .questions {
+    padding-top: 0.5rem;
+  }
 }
 .questions__title {
   font-family: "Fraunces", serif;
@@ -77,6 +125,16 @@ main :focus-visible {
   background: #FFFFFF;
   padding: 1.75rem 1.5rem;
   border-radius: 12px;
+}
+@media (min-width: 1024px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    flex: 1.15;
+    padding: 2rem 2rem 2.75rem;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
 }
 .form__fieldset {
   border: none;
@@ -130,4 +188,12 @@ main :focus-visible {
   border: 2px solid #8A3418;
   cursor: pointer;
   transition: background 0.2s ease;
+}
+@media (min-width: 1024px) {
+  .form__submit {
+    padding: 0.85rem 2rem;
+  }
+  .form__submit:hover {
+    background-color: rgb(116.2777777778, 43.8148148148, 20.2222222222);
+  }
 }/*# sourceMappingURL=contact.css.map */

@@ -20,12 +20,37 @@ main :focus-visible {
         font-size: 2.5rem;
         margin-bottom: 0.75rem;
     }
+
+    @include mq($bp-desktop) {
+        padding: 4rem 2.5rem;
+        
+        &__title {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.content {
+    @include mq($bp-desktop) {
+        @include flex-direction;
+        gap: 2.5rem;
+
+        &__layout {
+            flex: 1;
+        }
+    }
 }
 
 .contact {
     &__image {
         display: none;
-        max-width: 100%;
+
+        @include mq($bp-desktop) {
+            display: block;
+            max-width: 100%;
+            border-radius: 12px;
+        }
     }
     
     &__info {
@@ -36,10 +61,19 @@ main :focus-visible {
             @include flex-direction;
             gap: 5rem;
         }
+
+        @include mq($bp-desktop) {
+            margin-top: 1.5rem;
+            gap: 8.5rem;
+        }
     }
 
     &__address {
         font-style: normal;
+
+        @include mq($bp-tablet) {
+            line-height: 1.6;
+        }
     }
 
     &__title {
@@ -47,6 +81,11 @@ main :focus-visible {
         margin-bottom: 0.15rem;
         font-size: 1.25rem;
         font-weight: 600;
+
+        @include mq($bp-desktop) {
+            font-size: 1.35rem;
+            margin-bottom: 0.25rem;
+        }
     }
 
     &__details {
@@ -61,6 +100,10 @@ main :focus-visible {
 
 .questions {
     padding: 1rem 0;
+
+    @include mq($bp-desktop) {
+        padding-top: 0.5rem;
+    }
 
     &__title {
         font-family: $font-heading;
@@ -89,6 +132,13 @@ main :focus-visible {
     background: $color-bg-alt;
     padding: 1.75rem 1.5rem;
     border-radius: 12px;
+
+    @include mq($bp-desktop) {
+        @include flex-direction(column);
+        flex: 1.15;
+        padding: 2rem 2rem 2.75rem;
+        height: fit-content;
+    }
 
     &__fieldset {
         border: none;
@@ -148,5 +198,13 @@ main :focus-visible {
         border: 2px solid $color-accent;
         cursor: pointer;
         transition: background 0.2s ease;
+
+        @include mq($bp-desktop) {
+            padding: 0.85rem 2rem;
+
+            &:hover {
+                background-color: color.adjust($color-accent, $lightness: -5%);
+            }
+        }
     }
 }
