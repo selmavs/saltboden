@@ -65,29 +65,29 @@
 
                             <div class="booking__field">
                                 <label for="antal">Antal gäster *</label>
-                                <input type="number" name="antal" id="antal" min="1" max="10" value="1"
+                                <input type="number" name="antal" id="antal" min="1" max="8" value="1"
                                     inputmode="numeric" required>
                             </div>
                         </div>
-                    </fieldset>
 
-                    <fieldset class="booking__fieldset">
-                        <legend class="booking__seating">Var vill ni sitta?</legend>
+                        <fieldset class="booking__inline">
+                            <legend class="booking__seating">Var vill ni sitta?</legend>
 
-                        <div class="booking__seat">
-                            <div class="booking__choice">
-                                <input type="radio" id="plats-inne" name="plats" value="inne" checked>
-                                <label for="plats-inne">Inne</label>
+                            <div class="booking__seat">
+                                <div class="booking__choice">
+                                    <input type="radio" id="plats-inne" name="plats" value="inne" checked>
+                                    <label for="plats-inne">Inne</label>
+                                </div>
+                                <div class="booking__choice">
+                                    <input type="radio" id="plats-ute" name="plats" value="ute">
+                                    <label for="plats-ute">Uteservering</label>
+                                </div>
+                                <div class="booking__choice">
+                                    <input type="radio" id="plats-bar" name="plats" value="bar">
+                                    <label for="plats-bar">Vid baren</label>
+                                </div>
                             </div>
-                            <div class="booking__choice">
-                                <input type="radio" id="plats-ute" name="plats" value="ute">
-                                <label for="plats-ute">Uteservering</label>
-                            </div>
-                            <div class="booking__choice">
-                                <input type="radio" id="plats-bar" name="plats" value="bar">
-                                <label for="plats-bar">Vid baren</label>
-                            </div>
-                        </div>
+                        </fieldset>
                     </fieldset>
 
                     <fieldset class="booking__fieldset">

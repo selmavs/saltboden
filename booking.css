@@ -121,6 +121,10 @@
     gap: 2rem;
   }
 }
+.booking__inline {
+  border: none;
+  margin: 1.5rem 0 0.5rem;
+}
 .booking__seating {
   margin-bottom: 0.5rem;
 }
