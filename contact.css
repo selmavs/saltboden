@@ -3,24 +3,30 @@ main :focus-visible {
   outline-offset: 3px;
 }
 
-.container {
+main {
+  padding: 2rem 1rem;
+}
+@media (min-width: 1024px) {
+  main {
+    padding: 4rem 2.5rem;
+  }
+}
+
+body {
   background: #F6F1E9;
   font-family: "Work Sans", sans-serif;
-  padding: 2rem 1rem;
   line-height: 1.5;
   color: #1E2A2F;
 }
-.container__title {
+
+.title {
   font-family: "Fraunces", serif;
   font-weight: 600;
   font-size: 2.5rem;
   margin-bottom: 0.75rem;
 }
 @media (min-width: 1024px) {
-  .container {
-    padding: 4rem 2.5rem;
-  }
-  .container__title {
+  .title {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
   }

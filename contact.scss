@@ -7,27 +7,30 @@ main :focus-visible {
     outline-offset: 3px;
 }
 
-.container {
-    background: $color-bg;
-    font-family: $font-text;
+main {
     padding: 2rem 1rem;
-    line-height: 1.5;
-    color: $color-text;
-
-    &__title {
-        font-family: $font-heading;
-        font-weight: 600;
-        font-size: 2.5rem;
-        margin-bottom: 0.75rem;
-    }
 
     @include mq($bp-desktop) {
         padding: 4rem 2.5rem;
-        
-        &__title {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-        }
+    }
+}
+
+body {
+    background: $color-bg;
+    font-family: $font-text;
+    line-height: 1.5;
+    color: $color-text;
+}
+
+.title {
+    font-family: $font-heading;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    
+    @include mq($bp-desktop) {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
     }
 }
 
