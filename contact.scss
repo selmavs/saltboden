@@ -109,6 +109,10 @@ main :focus-visible {
         font-family: $font-heading;
         margin-top: 1rem;
         font-weight: 600;
+
+        @include mq($bp-desktop) {
+            font-size: 1.65rem;
+        }
     }
 
     &__details {
@@ -149,6 +153,10 @@ main :focus-visible {
         font-size: 1.5rem;
         font-weight: 600;
         margin-bottom: 0.75rem;
+
+        @include mq($bp-desktop) {
+            font-size: 1.65rem;
+        }
     }
 
     &__field {

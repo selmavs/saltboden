@@ -107,6 +107,11 @@ main :focus-visible {
   margin-top: 1rem;
   font-weight: 600;
 }
+@media (min-width: 1024px) {
+  .questions__title {
+    font-size: 1.65rem;
+  }
+}
 .questions__details {
   background: #FFFFFF;
   margin: 0.75rem 0;
@@ -144,6 +149,11 @@ main :focus-visible {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
+}
+@media (min-width: 1024px) {
+  .form__legend {
+    font-size: 1.65rem;
+  }
 }
 .form__field {
   display: flex;
