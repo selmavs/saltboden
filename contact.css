@@ -1,10 +1,9 @@
+main {
+  padding: 2rem 1rem;
+}
 main :focus-visible {
   outline: 3px solid #1E2A2F;
   outline-offset: 3px;
-}
-
-main {
-  padding: 2rem 1rem;
 }
 @media (min-width: 1024px) {
   main {

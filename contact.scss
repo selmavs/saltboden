@@ -2,13 +2,13 @@
 @use "mixins.scss" as *;
 @use "sass:color";
 
-main :focus-visible {
-    outline: 3px solid $color-text;
-    outline-offset: 3px;
-}
-
 main {
     padding: 2rem 1rem;
+
+    :focus-visible {
+        outline: 3px solid $color-text;
+        outline-offset: 3px;
+    }
 
     @include mq($bp-desktop) {
         padding: 4rem 2.5rem;
