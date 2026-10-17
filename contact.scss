@@ -3,6 +3,10 @@
 @use "sass:color";
 
 main {
+    background: $color-bg;
+    font-family: $font-text;
+    line-height: 1.5;
+    color: $color-text;
     padding: 2rem 1rem;
 
     :focus-visible {
@@ -13,13 +17,6 @@ main {
     @include mq($bp-desktop) {
         padding: 4rem 2.5rem;
     }
-}
-
-body {
-    background: $color-bg;
-    font-family: $font-text;
-    line-height: 1.5;
-    color: $color-text;
 }
 
 .title {

@@ -1,4 +1,8 @@
 main {
+  background: #F6F1E9;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.5;
+  color: #1E2A2F;
   padding: 2rem 1rem;
 }
 main :focus-visible {
@@ -9,13 +13,6 @@ main :focus-visible {
   main {
     padding: 4rem 2.5rem;
   }
-}
-
-body {
-  background: #F6F1E9;
-  font-family: "Work Sans", sans-serif;
-  line-height: 1.5;
-  color: #1E2A2F;
 }
 
 .title {
