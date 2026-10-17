@@ -76,6 +76,7 @@
     &__fieldset {
         border: none;
         margin-bottom: 1.75rem;
+        min-width: 0;
     }
 
     input[type="text"],
@@ -175,6 +176,14 @@
         @include flex-direction;
         gap: 0.5rem;
         margin: 1.75rem 0;
+
+        input {
+            margin-top: 0.2rem;
+
+            @include mq($bp-tablet) {
+                margin-top: 0;
+            }
+        }
 
         label {
             cursor: pointer;

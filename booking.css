@@ -71,6 +71,7 @@
 .booking__fieldset {
   border: none;
   margin-bottom: 1.75rem;
+  min-width: 0;
 }
 .booking input[type=text],
 .booking input[type=email],
@@ -166,6 +167,14 @@
   flex-direction: row;
   gap: 0.5rem;
   margin: 1.75rem 0;
+}
+.booking__terms input {
+  margin-top: 0.2rem;
+}
+@media (min-width: 768px) {
+  .booking__terms input {
+    margin-top: 0;
+  }
 }
 .booking__terms label {
   cursor: pointer;
