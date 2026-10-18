@@ -197,9 +197,10 @@ main {
 
     &__submit {
         min-height: 3rem;
-        padding: 0.75rem 1.75rem;
+        padding: 0.85rem 2rem;
         font-size: 1.125rem;
         font-weight: 600;
+        width: 100%;
         color: $color-bg;
         background: $color-accent;
         margin-top: 0.25rem;
@@ -208,14 +209,14 @@ main {
         cursor: pointer;
         transition: background 0.2s ease;
 
-        @include mq($bp-desktop) {
-            padding: 0.85rem 2rem;
+        @include mq($bp-tablet) {
+            width: auto;
         }
-    }
-        
-    &__submit:hover {
-        @include mq($bp-desktop) {     
-            background-color: color.adjust($color-accent, $lightness: -5%);
+
+        @include mq($bp-desktop) {
+            &:hover {
+                background-color: color.adjust($color-accent, $lightness: -5%);
+            }
         }
     }
 }

@@ -191,9 +191,10 @@ main :focus-visible {
 }
 .form__submit {
   min-height: 3rem;
-  padding: 0.75rem 1.75rem;
+  padding: 0.85rem 2rem;
   font-size: 1.125rem;
   font-weight: 600;
+  width: 100%;
   color: #F6F1E9;
   background: #8A3418;
   margin-top: 0.25rem;
@@ -202,9 +203,9 @@ main :focus-visible {
   cursor: pointer;
   transition: background 0.2s ease;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .form__submit {
-    padding: 0.85rem 2rem;
+    width: auto;
   }
 }
 @media (min-width: 1024px) {
