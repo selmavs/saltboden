@@ -114,7 +114,7 @@
         font-size: 1.05rem;
         line-height: 1.6;
         text-align: center;       
-        max-width: 690px;
+        max-width: 800px;
         margin: 0 auto 2rem;
 
         @include mq($bp-tablet) {
@@ -270,7 +270,7 @@
 
 .footer {
     @include flex-direction(column);
-    background-color: $color-primary;
+    background-color: $color-text;
     color: $color-bg;
     padding: 2.25rem 1.25rem;
 

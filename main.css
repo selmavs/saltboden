@@ -123,4 +123,7 @@
   .footer__dot {
     display: block;
   }
+}
+.footer address {
+  font-style: normal;
 }/*# sourceMappingURL=main.css.map */

@@ -109,7 +109,7 @@
   font-size: 1.05rem;
   line-height: 1.6;
   text-align: center;
-  max-width: 690px;
+  max-width: 800px;
   margin: 0 auto 2rem;
 }
 @media (min-width: 768px) {
@@ -260,7 +260,7 @@
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: #3B4448;
+  background-color: #1E2A2F;
   color: #F6F1E9;
   padding: 2.25rem 1.25rem;
 }
