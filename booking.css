@@ -30,7 +30,7 @@
   }
 }
 @media (min-width: 1024px) {
-  .booking__section {
+  .booking__content {
     flex: 2.15;
   }
 }
