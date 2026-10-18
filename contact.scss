@@ -146,6 +146,7 @@ main {
 
     &__fieldset {
         border: none;
+        min-width: 0;
     }
 
     &__legend {

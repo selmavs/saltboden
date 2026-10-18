@@ -145,6 +145,7 @@ main :focus-visible {
 }
 .form__fieldset {
   border: none;
+  min-width: 0;
 }
 .form__legend {
   font-family: "Fraunces", serif;
