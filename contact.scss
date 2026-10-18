@@ -210,10 +210,12 @@ main {
 
         @include mq($bp-desktop) {
             padding: 0.85rem 2rem;
-
-            &:hover {
-                background-color: color.adjust($color-accent, $lightness: -5%);
-            }
+        }
+    }
+        
+    &__submit:hover {
+        @include mq($bp-desktop) {     
+            background-color: color.adjust($color-accent, $lightness: -5%);
         }
     }
 }

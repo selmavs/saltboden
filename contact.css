@@ -206,6 +206,8 @@ main :focus-visible {
   .form__submit {
     padding: 0.85rem 2rem;
   }
+}
+@media (min-width: 1024px) {
   .form__submit:hover {
     background-color: rgb(116.2777777778, 43.8148148148, 20.2222222222);
   }
