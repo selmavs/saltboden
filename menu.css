@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem;
-  background-color: #3B4448;
+  background-color: #1E2A2F;
 }
 @media (min-width: 1024px) {
   .header {
@@ -62,6 +62,11 @@
   color: #F6F1E9;
   font-family: "Work Sans", sans-serif;
 }
+.nav__link[aria-current=page] {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
 .nav__link--booking {
   background-color: #8A3418;
   padding: 0.75rem 1.25rem;
@@ -95,22 +100,26 @@
 }
 @media (min-width: 768px) {
   .menu__title {
-    font-size: 3.75rem;
+    font-size: 4rem;
   }
 }
 .menu__intro {
   font-family: "Work Sans", sans-serif;
   color: #3B4448;
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.6;
   text-align: center;
-  text-wrap: balance;
-  max-width: 700px;
+  max-width: 690px;
   margin: 0 auto 2rem;
 }
 @media (min-width: 768px) {
   .menu__intro {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 768px) {
+  .menu__intro-line {
+    display: block;
   }
 }
 
@@ -124,12 +133,12 @@
 }
 .menu-nav__link {
   display: inline-block;
-  padding: 0.5rem 1.25rem;
+  padding: 0.65rem 1.5rem;
   border: 2px solid #1E2A2F;
   border-radius: 999px;
   color: #1E2A2F;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   text-decoration: none;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -160,7 +169,7 @@
 .menu-card__title {
   font-family: "Fraunces", serif;
   color: #1E2A2F;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 700;
   padding-bottom: 1rem;
   margin-bottom: 1.5rem;
@@ -168,7 +177,7 @@
 }
 @media (min-width: 768px) {
   .menu-card__title {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 }
 .menu-card__items {
@@ -176,6 +185,9 @@
   flex-direction: column;
   gap: 1.5rem;
   list-style: none;
+}
+.menu-card__items__drinks {
+  gap: 0.6rem;
 }
 
 .menu-item {
@@ -188,33 +200,48 @@
 .menu-item__name {
   font-family: "Fraunces", serif;
   color: #1E2A2F;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 0.25rem;
 }
+@media (min-width: 768px) {
+  .menu-item__name {
+    font-size: 1.45rem;
+  }
+}
 .menu-item__desc {
   font-family: "Work Sans", sans-serif;
   color: #3B4448;
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .menu-item__desc {
+    font-size: 1.1rem;
+  }
 }
 .menu-item__price {
   font-family: "Work Sans", sans-serif;
   color: #1E2A2F;
   flex-shrink: 0;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 700;
   white-space: nowrap;
   padding-top: 0.3rem;
 }
+@media (min-width: 768px) {
+  .menu-item__price {
+    font-size: 1.1rem;
+  }
+}
 .menu-item--simple {
   align-items: baseline;
-  gap: 1rem;
+  gap: 1.1rem;
 }
 .menu-item--simple .menu-item__name {
   font-family: "Work Sans", sans-serif;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -226,7 +253,7 @@
   font-family: "Work Sans", sans-serif;
   text-align: center;
   color: #6B7478;
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-top: 2.5rem;
 }
 
