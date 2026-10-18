@@ -78,35 +78,38 @@
 }
 @media (min-width: 768px) {
   .menu {
-    padding: 5rem 2rem 5rem;
+    padding: 5rem 2rem;
   }
 }
-
-.menu-intro {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 2.5rem;
+.menu__section {
+  margin-bottom: 2.5rem;
 }
-.menu-intro__title {
+.menu__title {
   font-family: "Fraunces", serif;
   font-size: 2.75rem;
   font-weight: 700;
+  color: #1E2A2F;
   line-height: 1.1;
+  text-align: center;
   margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
-  .menu-intro__title {
+  .menu__title {
     font-size: 3.75rem;
   }
 }
-.menu-intro_text {
-  color: #1E2A2F;
+.menu__intro {
+  font-family: "Work Sans", sans-serif;
+  color: #3B4448;
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 2rem;
+  text-align: center;
+  text-wrap: balance;
+  max-width: 700px;
+  margin: 0 auto 2rem;
 }
 @media (min-width: 768px) {
-  .menu-intro_text {
+  .menu__intro {
     font-size: 1.125rem;
   }
 }
@@ -133,6 +136,98 @@
 .menu-nav__link:hover, .menu-nav__link:focus-visible {
   background-color: #1E2A2F;
   color: #FFFFFF;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.menu-card {
+  background-color: #FFFFFF;
+  border-radius: 1rem;
+  padding: 1.75rem 1.5rem;
+  scroll-margin-top: 1.5rem;
+}
+@media (min-width: 768px) {
+  .menu-card {
+    padding: 2.5rem;
+  }
+}
+.menu-card__title {
+  font-family: "Fraunces", serif;
+  color: #1E2A2F;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #E3D9C9;
+}
+@media (min-width: 768px) {
+  .menu-card__title {
+    font-size: 2.5rem;
+  }
+}
+.menu-card__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.menu-item__name {
+  font-family: "Fraunces", serif;
+  color: #1E2A2F;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.25rem;
+}
+.menu-item__desc {
+  font-family: "Work Sans", sans-serif;
+  color: #3B4448;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.menu-item__price {
+  font-family: "Work Sans", sans-serif;
+  color: #1E2A2F;
+  flex-shrink: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  white-space: nowrap;
+  padding-top: 0.3rem;
+}
+.menu-item--simple {
+  align-items: baseline;
+  gap: 1rem;
+}
+.menu-item--simple .menu-item__name {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.menu-item--simple .menu-item__price {
+  padding-top: 0;
+}
+
+.menu-legend {
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  color: #6B7478;
+  font-size: 0.875rem;
+  margin-top: 2.5rem;
 }
 
 .footer {
