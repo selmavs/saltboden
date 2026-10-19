@@ -35,19 +35,19 @@
 .about__section h1 {
   font-family: "Fraunces", serif;
   color: #3B4448;
-  font-size: 42px;
+  font-size: 2.625rem;
   font-weight: 600;
 }
 @media (min-width: 1024px) {
   .about__section h1 {
     flex: 0 0 40%;
-    font-size: 54px;
+    font-size: 3.375rem;
   }
 }
 .about__section p {
   font-family: "Work Sans", sans-serif;
   color: #3B4448;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 @media (min-width: 1024px) {
   .about__section p {
@@ -84,7 +84,7 @@
 .info h2 {
   font-family: "Fraunces", serif;
   color: #3B4448;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 600;
 }
 .info__cards {
@@ -102,13 +102,13 @@
 .info__cards h3 {
   font-family: "Fraunces", serif;
   color: #3B4448;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
 }
 .info__cards p {
   font-family: "Work Sans", sans-serif;
   color: #3B4448;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .info__card1, .info__card2, .info__card3 {
   display: flex;
@@ -136,7 +136,7 @@
 .staff h2 {
   font-family: "Fraunces", serif;
   color: #3B4448;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 600;
 }
 .staff img {
@@ -173,7 +173,7 @@
 .staff__cards h3 {
   font-family: "Fraunces", serif;
   color: #3B4448;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
 }
 @media (min-width: 1024px) {
@@ -184,7 +184,7 @@
 .staff__cards p {
   font-family: "Work Sans", sans-serif;
   color: #3B4448;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .staff__card1, .staff__card2, .staff__card3 {
   display: flex;
