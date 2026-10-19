@@ -33,17 +33,17 @@
     }
 }
 
-.menu-nav {
+.menu-hamburger {
     &__close {
         display: none;
     }
 
     &[open] {
-        .menu-nav__open {
+        .menu-hamburger__open {
             display: none;
         }
 
-        .menu-nav__close {
+        .menu-hamburger__close {
             display: block;
         }
     }

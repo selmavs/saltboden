@@ -30,16 +30,16 @@
   outline-offset: 3px;
 }
 
-.menu-nav__close {
+.menu-hamburger__close {
   display: none;
 }
-.menu-nav[open] .menu-nav__open {
+.menu-hamburger[open] .menu-hamburger__open {
   display: none;
 }
-.menu-nav[open] .menu-nav__close {
+.menu-hamburger[open] .menu-hamburger__close {
   display: block;
 }
-.menu-nav summary {
+.menu-hamburger summary {
   display: flex;
   flex-direction: row;
   padding: 1rem;
@@ -55,20 +55,20 @@
   cursor: pointer;
   list-style: none;
 }
-.menu-nav summary::-webkit-details-marker {
+.menu-hamburger summary::-webkit-details-marker {
   display: none;
 }
-.menu-nav summary:focus-visible {
+.menu-hamburger summary:focus-visible {
   outline: 3px solid #FFFFFF;
   outline-offset: 3px;
 }
 @media (min-width: 1024px) {
-  .menu-nav summary {
+  .menu-hamburger summary {
     display: none;
   }
 }
 @media (min-width: 1024px) {
-  .menu-nav::details-content {
+  .menu-hamburger::details-content {
     content-visibility: visible;
   }
 }
