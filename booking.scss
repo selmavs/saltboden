@@ -6,6 +6,7 @@
     background: $color-bg;
     color: $color-primary;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .booking {
@@ -30,7 +31,7 @@
         padding: 4rem 2.5rem;
     }
 
-    &__section {
+    &__content {
         @include mq($bp-desktop) {
             flex: 2.15;
         }
@@ -76,6 +77,7 @@
     &__fieldset {
         border: none;
         margin-bottom: 1.75rem;
+        min-width: 0;
     }
 
     input[type="text"],
@@ -126,6 +128,11 @@
         }
     }
 
+    &__inline {
+        border: none;
+        margin: 1.5rem 0 0.5rem;
+    }
+
     &__seating {
         margin-bottom: 0.5rem;
     }
@@ -168,9 +175,16 @@
 
     &__terms {
         @include flex-direction;
-        align-items: center;
         gap: 0.5rem;
         margin: 1.75rem 0;
+
+        input {
+            margin-top: 0.2rem;
+
+            @include mq($bp-tablet) {
+                margin-top: 0;
+            }
+        }
 
         label {
             cursor: pointer;
@@ -182,6 +196,7 @@
         width: 1.5rem;
         height: 1.5rem;
         flex-shrink: 0;
+        accent-color: $color-accent;
     }
 
     & textarea {
@@ -190,9 +205,10 @@
 
     &__submit {
         min-height: 3rem;
-        padding: 0.75rem 1.75rem;
+        padding: 0.85rem 2rem;
         font-size: 1.125rem;
         font-weight: 600;
+        width: 100%;
         color: $color-bg;
         background: $color-accent;
         border-radius: 6px;
@@ -200,9 +216,11 @@
         cursor: pointer;
         transition: background 0.2s ease;
 
-        @include mq($bp-desktop) {
-            padding: 0.85rem 2rem;
+        @include mq($bp-tablet) {
+            width: auto;
+        }
 
+        @include mq($bp-desktop) {
             &:hover {
                 background-color: color.adjust($color-accent, $lightness: -5%);
             }

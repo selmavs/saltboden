@@ -39,30 +39,32 @@
         @include mq($bp-desktop) {
             padding: 0;
             gap: 2.5rem;
+            justify-content: center;
         }
 
-        h1 {
+        .eyebrow {
             font-family: $font-text;
             text-transform: uppercase;
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 600;
             color: $color-accent;
         }
 
-        h2 {
+        h1 {
             font-family: $font-heading;
             color: $color-primary;
-            font-size: 38px;
+            font-size: 2.375rem;
+            font-weight: 600;
 
             @include mq($bp-desktop) {
-            font-size: 58px;
+            font-size: 3.5rem;
         }
         }
 
         p {
             font-family: $font-text;
             color: $color-primary;
-            font-size: 20px;
+            font-size: 1.2rem;
         }
 
         .mobile--text {
@@ -95,12 +97,17 @@
         align-items: center;
         font-family: $font-text;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 1.2rem;
         color: $color-primary;
         border: 3px solid $color-primary;
         border-radius: 7px;
         padding: 1rem;
         text-decoration: none;
+
+        &:focus-visible {
+            outline: 3px solid $color-primary;
+            outline-offset: 3px;
+        }
 
             @include mq($bp-desktop) {
                 padding: 1rem 1.5rem;
@@ -126,8 +133,11 @@
         padding: 2.5rem 1.5rem;
 
         @include mq($bp-desktop) {
-            @include flex-direction(row);
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            grid-template-areas: 
+                "heading link"
+                "cards cards";
             padding: 3.5rem 3rem;
             gap: 2rem;
             }
@@ -136,26 +146,26 @@
     h2 {
         font-family: $font-heading;
         color: $color-primary;
-        font-size: 36px;
+        font-size: 2.25rem;
+        font-weight: 600;
 
         @include mq($bp-desktop) {
-            order: 1;
-            flex: 1;
+            grid-area: heading;
         }
     }
 
     h3 {
         font-family: $font-heading;
         color: $color-primary;
-        font-size: 22px;
-        font-weight: 550;
+        font-size: 1.375rem;
+        font-weight: 600;
     }
 
     p {
         font-family: $font-text;
         color: $color-primary;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     img {
@@ -168,13 +178,12 @@
 
     &__cards {
         @include flex-direction(column);
-        gap:1.5rem;
+        gap: 1.5rem;
     
         @include mq($bp-desktop) {
             @include flex-direction;
-            order: 3;
-            justify-content: center;
-            align-items: flex-start;
+            flex: 1;
+            grid-area: cards;
             gap: 1rem;
     }
 }
@@ -202,20 +211,24 @@
         @include mq($bp-desktop) {
             display: flex;
             font-weight: 400;
-            font-size: 18px;
+            font-size: 1.125rem;
             color: $color-text-alt;
         }
     }
 
     a {
         font-family: $font-text;
-        font-size: 16px;
+        font-size: 1rem;
         color: $color-accent;
         font-weight: 600;
 
+        &:focus-visible {
+            outline: 3px solid $color-primary;
+            outline-offset: 3px;
+        }
+
         @include mq($bp-desktop) {
-            order: 2;
-            display: flex;
+            grid-area: link;
             align-items: center;
         }
     }
@@ -236,9 +249,9 @@
 
     h2 {
         font-family: $font-heading;
-        font-weight: 550;
+        font-weight: 600;
         color: $color-primary;
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 
     &__tider {
@@ -263,7 +276,7 @@
     &__dagar {
         font-family: $font-text;
         color: $color-primary;
-        font-weight: 550;
+        font-weight: 600;
     }
 
     &__öppet {
@@ -281,6 +294,7 @@
 
         h2 {
             margin-bottom: 1.2rem;
+            font-weight: 600;
         }
 
         p {
@@ -292,6 +306,11 @@
             font-family: $font-text;
             color: $color-accent;
             margin-top: 1rem;
+
+            &:focus-visible {
+            outline: 3px solid $color-primary;
+            outline-offset: 3px;
+        }
         }
     }
 
@@ -310,6 +329,7 @@
 
         h2 {
             color: $color-bg;
+            font-weight: 600;
         }
 
         p {
@@ -320,6 +340,11 @@
         a {
             color: $color-bg;
             font-family: $font-text;
+
+            &:focus-visible {
+            outline: 3px solid $color-bg;
+            outline-offset: 3px;
+        }
         }
     }
 }
