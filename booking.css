@@ -1,8 +1,16 @@
 .nav__link--booking[aria-current=page] {
-  background: #F6F1E9;
-  color: #3B4448;
   font-weight: 600;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+@media (min-width: 1024px) {
+  .nav__link--booking[aria-current=page] {
+    background: #F6F1E9;
+    color: #3B4448;
+    font-weight: 600;
+    text-decoration: none;
+  }
 }
 
 .booking {

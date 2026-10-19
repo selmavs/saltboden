@@ -3,10 +3,17 @@
 @use "sass:color";
 
 .nav__link--booking[aria-current="page"] {
-    background: $color-bg;
-    color: $color-primary;
     font-weight: 600;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+
+    @include mq($bp-desktop) {
+        background: $color-bg;
+        color: $color-primary;
+        font-weight: 600;
+        text-decoration: none;
+    }
 }
 
 .booking {
