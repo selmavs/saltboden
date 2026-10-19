@@ -2,6 +2,7 @@
   background: #F6F1E9;
   color: #3B4448;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .booking {
@@ -29,7 +30,7 @@
   }
 }
 @media (min-width: 1024px) {
-  .booking__section {
+  .booking__content {
     flex: 2.15;
   }
 }
@@ -71,6 +72,7 @@
 .booking__fieldset {
   border: none;
   margin-bottom: 1.75rem;
+  min-width: 0;
 }
 .booking input[type=text],
 .booking input[type=email],
@@ -121,6 +123,10 @@
     gap: 2rem;
   }
 }
+.booking__inline {
+  border: none;
+  margin: 1.5rem 0 0.5rem;
+}
 .booking__seating {
   margin-bottom: 0.5rem;
 }
@@ -160,9 +166,16 @@
 .booking__terms {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 0.5rem;
   margin: 1.75rem 0;
+}
+.booking__terms input {
+  margin-top: 0.2rem;
+}
+@media (min-width: 768px) {
+  .booking__terms input {
+    margin-top: 0;
+  }
 }
 .booking__terms label {
   cursor: pointer;
@@ -171,15 +184,17 @@
   width: 1.5rem;
   height: 1.5rem;
   flex-shrink: 0;
+  accent-color: #8A3418;
 }
 .booking textarea {
   resize: vertical;
 }
 .booking__submit {
   min-height: 3rem;
-  padding: 0.75rem 1.75rem;
+  padding: 0.85rem 2rem;
   font-size: 1.125rem;
   font-weight: 600;
+  width: 100%;
   color: #F6F1E9;
   background: #8A3418;
   border-radius: 6px;
@@ -187,10 +202,12 @@
   cursor: pointer;
   transition: background 0.2s ease;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .booking__submit {
-    padding: 0.85rem 2rem;
+    width: auto;
   }
+}
+@media (min-width: 1024px) {
   .booking__submit:hover {
     background-color: rgb(116.2777777778, 43.8148148148, 20.2222222222);
   }
