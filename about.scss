@@ -1,0 +1,189 @@
+@use "variables.scss" as *;
+@use "mixins.scss" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about {
+    background-color: $color-bg;
+    border-bottom: 1px solid $color-border;
+
+    &__image {
+        width: 100%;
+
+        @include mq($bp-desktop) {
+        height: 500px;
+        object-fit: cover;
+        }
+    }
+
+    &__section {
+        @include flex-direction(column);
+        gap: 1.5rem;
+        padding: 2.5rem 1.5rem;
+
+        @include mq($bp-desktop) {
+            @include flex-direction;
+            align-items: center;
+            padding: 5rem 3rem;
+        }
+
+        h1 {
+            font-family: $font-heading;
+            color: $color-primary;
+            font-size: 2.625rem;
+            font-weight: 600;
+
+            @include mq($bp-desktop) {
+            flex: 0 0 40%;
+            font-size: 3.375rem;
+            }
+        }
+
+        p {
+            font-family: $font-text;
+            color: $color-primary;
+            font-size: 1.125rem;
+
+            @include mq($bp-desktop) {
+            line-height: 1.5rem;
+            }
+        }
+    }
+
+    .desktop--text {
+        display: none;
+        @include mq($bp-desktop) {
+            display: flex;
+        }
+    }
+
+    .mobile--text {
+        @include mq($bp-desktop) {
+            display: none;
+        }
+    }
+    }
+
+.info {
+    @include flex-direction(column);
+    background-color: $color-bg-alt;
+    border-bottom: 1px solid $color-border;
+    gap: 1.5rem;
+    padding: 2.5rem 1.5rem;
+
+    @include mq($bp-desktop) {
+        padding: 4rem 3rem;
+        }
+
+
+    h2 {
+        font-family: $font-heading;
+        color: $color-primary;
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
+
+    &__cards {
+        @include flex-direction(column);
+        gap: 1.5rem;
+
+        @include mq($bp-desktop) {
+            @include flex-direction;
+            gap: 2rem;
+            }
+
+        h3 {
+            font-family: $font-heading;
+            color: $color-primary;
+            font-size: 1.375rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: $font-text;
+            color: $color-primary;
+            font-size: 1.125rem;
+        }
+    }
+
+    &__card1, &__card2, &__card3 {
+    @include flex-direction(column);
+    gap: 0.5rem;
+
+    @include mq($bp-desktop) {
+        gap: 1rem;
+    }
+    }
+}
+
+.staff {
+    @include flex-direction(column);
+    background-color: $color-bg;
+    gap: 1.5rem;
+    padding: 2.5rem 1.5rem;
+
+    @include mq($bp-desktop) {
+        padding: 5rem 3rem;
+        }
+
+    h2 {
+        font-family: $font-heading;
+        color: $color-primary;
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
+
+    img {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+        object-fit: cover;
+
+        @include mq($bp-desktop) {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            aspect-ratio: 1;
+        }
+    }
+
+    &__cards {
+        @include flex-direction (column);
+        gap: 1.5rem;
+
+        @include mq($bp-desktop) {
+            @include flex-direction;
+        }
+
+        > article {
+            flex: 1;
+            min-width: 0;
+        }
+
+        h3 {
+        font-family: $font-heading;
+        color: $color-primary;
+        font-size: 1.375rem;
+        font-weight: 600;
+
+        @include mq($bp-desktop) {
+            margin-top: 0.7rem;
+        }
+        }
+
+        p {
+        font-family: $font-text;
+        color: $color-primary;
+        font-size: 1rem;
+        }
+    }
+
+    &__card1, &__card2, &__card3 {
+        @include flex-direction(column);
+        gap: 0.5rem;
+    }
+}

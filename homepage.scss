@@ -1,0 +1,350 @@
+@use "variables.scss" as *;
+@use "mixins.scss" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero */
+
+.hero {
+    display: block;
+    background-color: $color-bg;
+    border-bottom: 1px solid $color-border;
+
+    @include mq($bp-desktop) {
+        @include flex-direction(row-reverse);
+        align-items: center;
+        gap: 3rem;
+        padding: 3.5rem 3rem;
+        }
+
+    &__image {
+        width: 100%;
+
+        @include mq($bp-desktop) {
+            border-radius: 10px;
+            width: 37rem;
+            height: auto;
+        }
+    }
+
+    &__section {
+        @include flex-direction(column);
+        gap: 1.5rem;
+        padding: 2.5rem 1.5rem;
+
+        @include mq($bp-desktop) {
+            padding: 0;
+            gap: 2.5rem;
+            justify-content: center;
+        }
+
+        .eyebrow {
+            font-family: $font-text;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 600;
+            color: $color-accent;
+        }
+
+        h1 {
+            font-family: $font-heading;
+            color: $color-primary;
+            font-size: 2.375rem;
+            font-weight: 600;
+
+            @include mq($bp-desktop) {
+            font-size: 3.5rem;
+        }
+        }
+
+        p {
+            font-family: $font-text;
+            color: $color-primary;
+            font-size: 1.2rem;
+        }
+
+        .mobile--text {
+            @include mq($bp-desktop) {
+            display: none;
+            }
+        }
+
+        .desktop--text {
+            display:none;
+
+            @include mq($bp-desktop) {
+                display: block;
+                color: $color-primary;
+            }
+        }
+    }
+
+    &__links {
+        @include flex-direction(column);
+        gap: 1rem;
+
+            @include mq($bp-desktop) {
+                flex-direction: row;
+            }
+    }
+
+    a {
+        @include flex-direction(column);
+        align-items: center;
+        font-family: $font-text;
+        font-weight: 500;
+        font-size: 1.2rem;
+        color: $color-primary;
+        border: 3px solid $color-primary;
+        border-radius: 7px;
+        padding: 1rem;
+        text-decoration: none;
+
+        &:focus-visible {
+            outline: 3px solid $color-primary;
+            outline-offset: 3px;
+        }
+
+            @include mq($bp-desktop) {
+                padding: 1rem 1.5rem;
+            }
+    }
+
+    a:hover {
+        background-color: $color-accent;
+        color: $color-bg;
+        border-color: transparent;
+    }
+}
+
+/* Main */
+
+.main {
+    @include flex-direction(column);
+    border-bottom: 1px solid $color-border;
+
+    &__section {
+        @include flex-direction(column);
+        gap: 1.5rem;
+        padding: 2.5rem 1.5rem;
+
+        @include mq($bp-desktop) {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            grid-template-areas: 
+                "heading link"
+                "cards cards";
+            padding: 3.5rem 3rem;
+            gap: 2rem;
+            }
+    }
+
+    h2 {
+        font-family: $font-heading;
+        color: $color-primary;
+        font-size: 2.25rem;
+        font-weight: 600;
+
+        @include mq($bp-desktop) {
+            grid-area: heading;
+        }
+    }
+
+    h3 {
+        font-family: $font-heading;
+        color: $color-primary;
+        font-size: 1.375rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-family: $font-text;
+        color: $color-primary;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 16rem;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    &__cards {
+        @include flex-direction(column);
+        gap: 1.5rem;
+    
+        @include mq($bp-desktop) {
+            @include flex-direction;
+            flex: 1;
+            grid-area: cards;
+            gap: 1rem;
+    }
+}
+
+&__card1, &__card2, &__card3 {
+    @include flex-direction(column);
+    gap: 0.8rem;
+
+    @include mq($bp-desktop) {
+        flex: 1;
+    }
+}
+
+&__card3 {
+    display: none;
+
+    @include mq($bp-desktop) {
+        display: flex;
+    }
+}
+
+    .beskrivning {
+        display: none;
+
+        @include mq($bp-desktop) {
+            display: flex;
+            font-weight: 400;
+            font-size: 1.125rem;
+            color: $color-text-alt;
+        }
+    }
+
+    a {
+        font-family: $font-text;
+        font-size: 1rem;
+        color: $color-accent;
+        font-weight: 600;
+
+        &:focus-visible {
+            outline: 3px solid $color-primary;
+            outline-offset: 3px;
+        }
+
+        @include mq($bp-desktop) {
+            grid-area: link;
+            align-items: center;
+        }
+    }
+}
+
+/* Section */
+
+.aside {
+    background-color: $color-bg;
+    padding: 1.5rem;
+
+    @include mq($bp-desktop) {
+            @include flex-direction;
+            padding: 3.5rem 3rem;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+    h2 {
+        font-family: $font-heading;
+        font-weight: 600;
+        color: $color-primary;
+        font-size: 1.75rem;
+    }
+
+    &__tider {
+        @include flex-direction(column);
+        gap: 0.5rem;
+    }
+
+    &__listor {
+        @include flex-direction;
+        gap: 1rem;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0.7rem 0 6rem 0;
+    }
+
+    li {
+        padding: 0.15rem 0;
+    }
+
+    &__dagar {
+        font-family: $font-text;
+        color: $color-primary;
+        font-weight: 600;
+    }
+
+    &__öppet {
+        font-family: $font-text;
+        color: $color-primary;
+    }
+
+    &__hitta {
+        display: none;
+
+        @include mq($bp-desktop) {
+            @include flex-direction (column);
+            margin-left: 4rem;
+        }
+
+        h2 {
+            margin-bottom: 1.2rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: $font-text;
+            color: $color-primary;
+        }
+
+        a {
+            font-family: $font-text;
+            color: $color-accent;
+            margin-top: 1rem;
+
+            &:focus-visible {
+            outline: 3px solid $color-primary;
+            outline-offset: 3px;
+        }
+        }
+    }
+
+    &__sällskap {
+        display: none;
+
+        @include mq($bp-desktop) {
+            @include flex-direction (column);
+            background-color: $color-primary;
+            border-radius: 10px;
+            padding: 1.5rem;
+            width: 33%;
+            height: 13rem;
+            gap: 1rem;
+        }
+
+        h2 {
+            color: $color-bg;
+            font-weight: 600;
+        }
+
+        p {
+            color: $color-bg;
+            font-family: $font-text;
+        }
+
+        a {
+            color: $color-bg;
+            font-family: $font-text;
+
+            &:focus-visible {
+            outline: 3px solid $color-bg;
+            outline-offset: 3px;
+        }
+        }
+    }
+}

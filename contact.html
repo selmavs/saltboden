@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Saltboden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <header class="header">
+        <p class="header__logo">Saltboden</p>
+        <button class="header__button">
+            <img src="/images/menu-icon.svg" alt="">
+            Meny
+        </button>
+
+        <nav class="nav">
+            <ul class="nav__links">
+                <li><a href="index.html" class="nav__link">Start</a></li>
+                <li><a href="menu.html" class="nav__link">Meny</a></li>
+                <li><a href="about.html" class="nav__link">Om oss</a></li>
+                <li><a href="contact.html" class="nav__link" aria-current="page">Kontakt</a></li>
+                <li><a href="booking.html" class="nav__link nav__link--booking">Boka bord</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="title">Kontakt</h1>
+        <div class="content">
+            <div class="content__layout">
+                <div class="contact">
+                    <img class="contact__image" src="images/map.jpg" alt="Hand som sätter en röd knappnål på en karta">
+
+                    <div class="contact__info">
+                        <div>
+                            <h2 class="contact__title">Adress</h2>
+                            <address class="contact__address">
+                                <p>Kajgatan 4</p>
+                                <p>123 45 Hamnstad</p>
+                            </address>
+                        </div>
+
+                        <div>
+                            <h2 class="contact__title">Telefon &amp; e-post</h2>
+                            <address class="contact__address contact__details">
+                                <a class="contact__link" href="tel:+46101234567">010-123 45 67</a>
+                                <a class="contact__link" href="mailto:hej@saltboden.se">hej@saltboden.se</a>
+                            </address>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="questions">
+                    <h2 class="questions__title">Vanliga frågor</h2>
+                    <details class="questions__details">
+                        <summary>Finns det parkering?</summary>
+                        <p>Ja, det finns ett stort garage i samma byggnad.</p>
+                    </details>
+
+                    <details class="questions__details">
+                        <summary>Är restaurangen tillgänglig med rullstol?</summary>
+                        <p>Ja, restaurangen är tillgänglig med rullstol.</p>
+                    </details>
+
+                    <details class="questions__details">
+                        <summary>Kan man ta med hund?</summary>
+                        <p>Ja, hundar är välkomna!</p>
+                    </details>
+                </section>
+            </div>
+
+            <form class="form" action="#" method="post">
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Skicka ett meddelande</legend>
+
+                    <div class="form__field">
+                        <label for="namn">Namn</label>
+                        <input type="text" id="namn" name="namn" autocomplete="name">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="epost">E-post</label>
+                        <input type="email" id="epost" name="epost" autocomplete="email">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="amne">Ämne</label>
+                        <select name="amne" id="amne">
+                            <option value="">Välj ämne</option>
+                            <option value="fraga">Fråga</option>
+                            <option value="onskemal">Önskemål</option>
+                            <option value="sallskap">Större sällskap</option>
+                        </select>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="meddelande">Meddelande</label>
+                        <textarea name="meddelande" id="meddelande" rows="5" maxlength="500"></textarea>
+                    </div>
+
+                    <button class="form__submit" type="submit">Skicka</button>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__logo">Saltboden</p>
+        <address>
+            <p class="footer__address">Kajgatan 4, 123 45 Hamnstad</p>
+            <div class="footer__info">
+                <a class="footer__phone" href="tel:+46101234567">010-123 45 67</a>
+                <span class="footer__dot" aria-hidden="true">•</span>
+                <a class="footer__mail" href="mailto:hej@saltboden.se">hej@saltboden.se</a>
+            </div>
+        </address>
+        <div>
+            <a href="#" class="footer__social">Instagram</a>
+            <a href="#" class="footer__social">Facebook</a>
+        </div>
+    </footer>
+</body>
+
+</html>

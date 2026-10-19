@@ -54,14 +54,21 @@
     &__links {
         @include flex-direction;
         list-style: none;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
     &__link {
         text-decoration: none;
         color: $color-bg;
         font-family: $font-text;
+        padding: 0.25rem 0.5rem;
 
+        &[aria-current="page"] {
+            font-weight: 600;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+            text-decoration-thickness: 2px;
+        }
 
         &--booking {
             background-color: $color-accent;
@@ -69,6 +76,11 @@
             border-radius: 6px;
             font-weight: 500;
             margin-left: -1rem;
+        }
+
+        &:focus-visible {
+            outline: 3px solid $color-bg-alt;
+            outline-offset: 3px;
         }
     }
 }
@@ -113,11 +125,21 @@
 
     &__social {
         margin-left: 0.75rem;
+
+        &:focus-visible {
+            outline: 3px solid $color-bg-alt;
+            outline-offset: 3px;
+        }
     }
 
     &__info {
         @include flex-direction;
         gap: 0.5rem;
+
+        & a:focus-visible {
+            outline: 3px solid $color-bg-alt;
+            outline-offset: 3px;
+        }
     }
 
     &__dot {

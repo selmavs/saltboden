@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boka bord - Saltboden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+    <header class="header">
+        <p class="header__logo">Saltboden</p>
+        <button class="header__button">
+            <img src="/images/menu-icon.svg" alt="">
+            Meny
+        </button>
+
+        <nav class="nav">
+            <ul class="nav__links">
+                <li><a href="index.html" class="nav__link">Start</a></li>
+                <li><a href="menu.html" class="nav__link">Meny</a></li>
+                <li><a href="about.html" class="nav__link">Om oss</a></li>
+                <li><a href="contact.html" class="nav__link">Kontakt</a></li>
+                <li><a href="booking.html" class="nav__link nav__link--booking" aria-current="page">Boka bord</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="booking">
+            <div class="booking__content">
+                <h1 class="booking__title">Boka bord</h1>
+                <p class="booking__intro">Fält markerade med * är obligatoriska. Du får en bekräftelse via e-post.
+                </p>
+
+                <form class="booking__form" action="#" method="post">
+                    <fieldset class="booking__fieldset">
+                        <legend class="booking__legend">Ditt besök</legend>
+
+                        <div class="booking__visit">
+                            <div class="booking__field">
+                                <label for="datum">Datum <span aria-hidden="true">*</span></label>
+                                <input type="date" id="datum" name="datum" min="2026-10-13" required>
+                            </div>
+
+                            <div class="booking__field">
+                                <label for="tid">Tid <span aria-hidden="true">*</span></label>
+                                <select name="tid" id="tid" required>
+                                    <option value="">Välj tid</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="18:00">18:00</option>
+                                </select>
+                            </div>
+
+                            <div class="booking__field">
+                                <label for="antal">Antal gäster <span aria-hidden="true">*</span></label>
+                                <input type="number" name="antal" id="antal" min="1" max="8" value="1"
+                                    inputmode="numeric" required>
+                            </div>
+                        </div>
+
+                        <fieldset class="booking__inline">
+                            <legend class="booking__seating">Var vill ni sitta?</legend>
+
+                            <div class="booking__seat">
+                                <div class="booking__choice">
+                                    <input type="radio" id="plats-inne" name="plats" value="inne" checked>
+                                    <label for="plats-inne">Inne</label>
+                                </div>
+                                <div class="booking__choice">
+                                    <input type="radio" id="plats-ute" name="plats" value="ute">
+                                    <label for="plats-ute">Uteservering</label>
+                                </div>
+                                <div class="booking__choice">
+                                    <input type="radio" id="plats-bar" name="plats" value="bar">
+                                    <label for="plats-bar">Vid baren</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </fieldset>
+
+                    <fieldset class="booking__fieldset">
+                        <legend class="booking__legend">Dina uppgifter</legend>
+
+                        <div class="booking__contact">
+                            <div class="booking__field">
+                                <label for="namn">Namn <span aria-hidden="true">*</span></label>
+                                <input type="text" id="namn" name="namn" autocomplete="name" required>
+                            </div>
+                            <div class="booking__field">
+                                <label for="telefon">Telefon <span aria-hidden="true">*</span></label>
+                                <input type="tel" id="telefon" name="telefon" autocomplete="tel" required>
+                            </div>
+                        </div>
+
+                        <div class="booking__field booking__email">
+                            <label for="epost">E-post <span aria-hidden="true">*</span></label>
+                            <input type="email" id="epost" name="epost" autocomplete="email"
+                                aria-describedby="epost-hint" required>
+                            <p class="booking__hint" id="epost-hint">Vi skickar bokningsbekräftelsen hit.</p>
+                        </div>
+                    </fieldset>
+
+                    <div class="booking__field">
+                        <label for="allergier">Allergier eller önskemål</label>
+                        <textarea name="allergier" id="allergier" rows="5" maxlength="500"></textarea>
+                    </div>
+
+                    <div class="booking__terms">
+                        <input type="checkbox" id="villkor" name="villkor" required>
+                        <label for="villkor">Jag godkänner att Saltboden sparar mina uppgifter för bokningen
+                            <span aria-hidden="true">*</span></label>
+                    </div>
+
+                    <button class="booking__submit" type="submit">Skicka bokning</button>
+                </form>
+            </div>
+
+            <aside class="booking__aside">
+                <h2 class="booking__aside-title">Bra att veta</h2>
+                <ul class="booking__aside-list">
+                    <li class="booking__aside-item">Bordet är ditt i två timmar.</li>
+                    <li class="booking__aside-item">Avboka senast 24 timmar innan.</li>
+                    <li class="booking__aside-item">Sällskap över 8 personer bokar via telefon.</li>
+                </ul>
+                <p>Ring oss: <a href="tel:+46101234567" class="booking__aside-phone">010-123 45 67</a></p>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__logo">Saltboden</p>
+        <address>
+            <p class="footer__address">Kajgatan 4, 123 45 Hamnstad</p>
+            <div class="footer__info">
+                <a class="footer__phone" href="tel:+46101234567">010-123 45 67</a>
+                <span class="footer__dot" aria-hidden="true">•</span>
+                <a class="footer__mail" href="mailto:hej@saltboden.se">hej@saltboden.se</a>
+            </div>
+        </address>
+        <div>
+            <a href="#" class="footer__social">Instagram</a>
+            <a href="#" class="footer__social">Facebook</a>
+        </div>
+    </footer>
+</body>
+
+</html>
