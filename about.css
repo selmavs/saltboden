@@ -166,7 +166,7 @@
     flex-direction: row;
   }
 }
-.staff__cards > div {
+.staff__cards > article {
   flex: 1;
   min-width: 0;
 }
